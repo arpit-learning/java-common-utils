@@ -1,0 +1,56 @@
+package dev.arpit.learning.commonUtils.constants;
+
+import dev.arpit.learning.logger.models.IMessageConstant;
+import lombok.Getter;
+
+public enum CommonUtilLogConstants implements IMessageConstant {
+  STRING_TO_LIST_CONVERSION_EXC("STRING_TO_LIST_CONVERSION_EXC", "APP_VL_068"),
+  UNABLE_TO_PROCESS_STRING("UNABLE_TO_PROCESS_STRING", "APP_VL_067"),
+  EMPTY_STRING_FOUND("EMPTY_STRING_FOUND", "APP_VL_066"),
+  STRING_TO_LIST_CONVERSION("STRING_TO_LIST_CONVERSION"),
+  GET_FILE_EXTENSION_FAILED("GET_FILE_EXTENSION_FAILED", "APP_VL_062"),
+  TIMESTAMP_FORMAT("YYYY_MMMM_dd_HH:mm:ss"),
+  UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT("UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT"),
+  VALID_DATE_FORMAT_FOUND("VALID_DATE_FORMAT_FOUND"),
+  OBJECT_TO_STRING_CONVERSION_EXC("OBJECT_TO_STRING_CONVERSION_EXC"),
+  INVALID_DATE_ERROR("INVALID_DATE_ERROR", "APP_VL_023"),
+  EMPTY_FILE_PATH_FOUND("EMPTY_FILE_PATH_FOUND", "APP_VL_078"),
+  FILE_NOT_EXIST_OR_NOT_READABLE("FILE_NOT_EXIST_OR_NOT_READABLE", "APP_VL_079"),
+  NULL_OR_EMPTY_ERROR("NULL_OR_EMPTY_ERROR", "APP_VL_027"),
+  WRITING_CSV_ERR("WRITING_CSV_ERR", "APP_VL_069"),
+  FILE_FLUSHING_OR_CLOSING_ERR("FILE_FLUSHING_OR_CLOSING_ERR", "APP_VL_070"),
+  WRITE_TO_FILE("WRITE_TO_FILE"),
+  WRITE_TO_FILE_IO_EXC("WRITE_TO_FILE_IO_EXC", "APP_VL_072"),
+  MASKING_NAME_STARTED("masking of name started"),
+  MASKING_NAME_DONE("masking of name done and returning"),
+  MASKING_EMAIL_STARTED("masking of email started"),
+  MASKING_EMAIL_DONE("masking of email done and returning"),
+  MASKING_MOBILE_STARTED("masking of mobile number started"),
+  MASKING_MOBILE_DONE("masking of mobile number done and returning"),
+  MAKING_HTTP_REQUEST("MAKING_HTTP_REQUEST"),
+  COMPLETED_HTTP_REQUEST("COMPLETED_HTTP_REQUEST"),
+  RESOURCE_ACCESS_EXC("RESOURCE_ACCESS_EXC", "APP_SE_801"),
+  HTTP_CLIENT_ERROR_EXCEPTION("HTTP_CLIENT_ERROR_EXCEPTION", "APP_SE_802"),
+  RUNTIME_EXCEPTION_EXC_WHILE_CALLING_API("RUNTIME_EXCEPTION_EXC_WHILE_CALLING_API", "APP_SE_803"),
+  SOME_EXC_WHILE_CALLING_API("SOME_EXC_WHILE_CALLING_API", "APP_SE_804"),
+  DATA_SENT_FOR_THE_CSV("DATA_SENT_FOR_THE_CSV"),
+  EXCEPTION("EXCEPTION", "APP_VL_036"),
+  API_RESPONSE("API_RESPONSE");
+
+  private final String message;
+  @Getter private final String shortCode;
+
+  CommonUtilLogConstants(String message) {
+    this(message, null);
+  }
+
+  CommonUtilLogConstants(String message, String shortCode) {
+    this.message = message;
+    this.shortCode = shortCode;
+  }
+
+  @Override
+  public String getMessage() {
+    return message;
+  }
+}

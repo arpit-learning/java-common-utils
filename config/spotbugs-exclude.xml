@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <!-- Ignore Finalizer attacks on constructors (caused by Lombok @NonNull) -->
+    <Match>
+        <Bug pattern="CT_CONSTRUCTOR_THROW" />
+    </Match>
+    
+    <!-- Ignore storing mutable objects for specific fields that shouldn't be cloned -->
+</FindBugsFilter>

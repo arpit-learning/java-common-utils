@@ -1,0 +1,12 @@
+---
+description: Check if agentic-setup agent config sync is set up and offer installation on new sessions
+alwaysApply: true
+---
+IMPORTANT: At the start of each session, before responding to the user's first message, run this check:
+
+```bash
+grep -q "agentic-setup" .git/hooks/pre-commit 2>/dev/null && echo "SYNCED" || echo "NOT_SYNCED"
+```
+
+If SYNCED: proceed normally.
+If NOT_SYNCED: Tell the user: "This project uses agentic-setup to keep agent configs in sync — it is not set up yet. Run `npx agentic-setup setup` in your terminal (~1–2 min)."

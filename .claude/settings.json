@@ -1,0 +1,83 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/agentic-check-sync.sh",
+            "description": "agentic-setup: offer setup if not configured"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/agentic-session-freshness.sh",
+            "description": "agentic-setup: check config freshness on session start"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn observe",
+            "description": "agentic-setup: recording tool usage for session learning"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn observe --failure",
+            "description": "agentic-setup: recording tool failure for session learning"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn observe --prompt",
+            "description": "agentic-setup: recording user prompt for correction detection"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn finalize --auto",
+            "description": "agentic-setup: finalizing session learnings"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(./gradlew *)",
+      "Bash(gradle *)"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn observe"
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn observe --failure"
+      }
+    ],
+    "userPromptSubmit": [
+      {
+        "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn observe --prompt"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup learn finalize --auto"
+      }
+    ]
+  }
+}

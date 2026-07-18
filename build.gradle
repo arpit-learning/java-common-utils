@@ -1,0 +1,143 @@
+buildscript {
+    configurations.classpath {
+        attributes {
+            attribute(Attribute.of("org.gradle.jvm.environment", String), "standard-jvm")
+        }
+    }
+}
+
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+    id 'jacoco'
+    id "org.springframework.boot" version "4.1.0"
+    id "org.owasp.dependencycheck" version "12.2.2"
+    id "com.diffplug.spotless" version "8.8.0"
+    id "com.github.spotbugs" version "6.5.9"
+    id "com.github.ben-manes.versions" version "0.54.0"
+    id "org.sonarqube" version "7.3.1.8318"
+    id "io.freefair.lombok" version "9.5.0"
+    id "com.adarshr.test-logger" version "4.0.0"
+    id "com.gorylenko.gradle-git-properties" version "4.0.1"
+}
+
+spotbugs {
+    excludeFilter = file("${rootDir}/config/spotbugs-exclude.xml")
+}
+
+ext {
+    githubPackagesOwner = 'arpit-learning'
+    githubPackagesRepo = 'java-logger'
+    githubPackagesUrl = "https://maven.pkg.github.com/${githubPackagesOwner}/${githubPackagesRepo}"
+}
+
+def githubPackagesCredentials = {
+    username = providers.gradleProperty("gpr.user").orElse(providers.environmentVariable("GITHUB_ACTOR")).orNull
+    password = providers.gradleProperty("gpr.key").orElse(providers.environmentVariable("GITHUB_TOKEN")).orNull
+}
+
+group = 'dev.arpit.learning'
+version = '0.0.0'
+
+tasks.named("spotbugsTest") {
+    enabled = false
+}
+tasks.named("bootJar") {
+    enabled = false
+}
+tasks.named("jar") {
+    enabled = true
+}
+tasks.named("dependencyUpdates").configure {
+    notCompatibleWithConfigurationCache("The dependencyUpdates task performs dynamic dependency resolution which is not supported by the Gradle Configuration Cache.")
+}
+
+spotless {
+    java {
+        googleJavaFormat()
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.14"
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+        html.required = true
+        html.outputLocation = layout.buildDirectory.dir("jacocoHtml")
+    }
+}
+
+plugins.withType(JavaPlugin).configureEach {
+    java {
+        sourceCompatibility = JavaVersion.VERSION_25
+        targetCompatibility = JavaVersion.VERSION_25
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.compilerArgs += [
+                "-Xlint:unchecked",
+                "-Xlint:deprecation"
+        ]
+    }
+}
+
+dependencyCheck {
+    failBuildOnCVSS = 7.0
+    suppressionFile = "${rootDir}/config/dependency-check-suppressions.xml"
+    formats = ['HTML', 'JSON']
+    // CI runs dependency-check 9.x via Docker (NVD API key). Local: ./gradlew dependencyCheckAnalyze
+    // requires NVD data or use the same Docker command as ci-security.yml.
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = project.group
+            artifactId = project.name.replaceAll(/([a-z0-9])([A-Z])/, '$1-$2').toLowerCase()
+            version = project.version
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri(rootProject.ext.githubPackagesUrl)
+            credentials githubPackagesCredentials
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "GitHubPackages"
+        url = uri(rootProject.ext.githubPackagesUrl)
+        credentials githubPackagesCredentials
+    }
+}
+
+dependencies {
+    implementation 'com.jayway.jsonpath:json-path'
+    implementation 'com.github.f4b6a3:uuid-creator:6.1.1'
+    implementation 'dev.arpit.learning:java-logger:0.0.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-restclient'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
+    implementation platform("com.amazonaws:aws-java-sdk-bom:1.12.797")
+    implementation platform('org.springframework.boot:spring-boot-dependencies:4.1.0')
+    testImplementation platform('org.junit:junit-bom:6.1.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
