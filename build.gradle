@@ -130,7 +130,7 @@ repositories {
 dependencies {
     implementation 'com.jayway.jsonpath:json-path'
     implementation 'com.github.f4b6a3:uuid-creator:6.1.1'
-    implementation 'dev.arpit.learning:java-logger:0.0.4'
+    implementation 'dev.arpit.learning:java-logger:0.0.5'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-restclient'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'

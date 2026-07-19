@@ -70,6 +70,28 @@
             "description": "agentic-setup: finalizing session learnings"
           }
         ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/arpit.malik/.nvm/versions/node/v24.18.0/bin/agentic-setup refresh --quiet",
+            "description": "agentic-setup: auto-refreshing docs based on code changes"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/agentic-freshness-notify.sh",
+            "description": "agentic-setup: warn when agent configs are stale"
+          }
+        ]
       }
     ]
   },

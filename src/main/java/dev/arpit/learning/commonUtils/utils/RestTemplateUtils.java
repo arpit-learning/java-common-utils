@@ -25,19 +25,11 @@ public class RestTemplateUtils {
   private static final ILogger logger = LoggerFactory.getLogger(RestTemplateUtils.class);
   private static final int READ_TIMEOUT = 10;
   private static final int CONNECT_TIMEOUT = 10;
-  private static RestTemplate restTemplate =
+  private static final RestTemplate defaultRestTemplate =
       new RestTemplateBuilder()
-          .connectTimeout(Duration.ofSeconds(READ_TIMEOUT))
-          .readTimeout(Duration.ofSeconds(CONNECT_TIMEOUT))
+          .connectTimeout(Duration.ofSeconds(CONNECT_TIMEOUT))
+          .readTimeout(Duration.ofSeconds(READ_TIMEOUT))
           .build();
-
-  private static void setCustomRequestTimeout(int connectTimeout, int readTimeout) {
-    restTemplate =
-        new RestTemplateBuilder()
-            .connectTimeout(Duration.ofSeconds(connectTimeout))
-            .readTimeout(Duration.ofSeconds(readTimeout))
-            .build();
-  }
 
   private static @NonNull URI buildUri(
       @NonNull String url, @Nullable HashMap<String, String> queryParams, Object... uriVariables) {
@@ -81,13 +73,14 @@ public class RestTemplateUtils {
       @NonNull Class<T> responseType,
       int connectTimeout,
       int readTimeout) {
-    if (connectTimeout == -1) {
-      connectTimeout = CONNECT_TIMEOUT;
+    RestTemplate templateToUse = defaultRestTemplate;
+    if (connectTimeout != -1 && readTimeout != -1) {
+      templateToUse =
+          new RestTemplateBuilder()
+              .connectTimeout(Duration.ofSeconds(connectTimeout))
+              .readTimeout(Duration.ofSeconds(readTimeout))
+              .build();
     }
-    if (readTimeout == -1) {
-      readTimeout = READ_TIMEOUT;
-    }
-    setCustomRequestTimeout(connectTimeout, readTimeout);
     logger.info(
         CommonUtilLogConstants.MAKING_HTTP_REQUEST,
         CommonUtilLogFieldConstants.URI,
@@ -102,7 +95,7 @@ public class RestTemplateUtils {
         readTimeout);
     try {
       ResponseEntity<T> httpResponse =
-          restTemplate.exchange(uri, httpMethod, requestEntity, responseType);
+          templateToUse.exchange(uri, httpMethod, requestEntity, responseType);
       logger.info(
           CommonUtilLogConstants.COMPLETED_HTTP_REQUEST,
           CommonUtilLogFieldConstants.URI,

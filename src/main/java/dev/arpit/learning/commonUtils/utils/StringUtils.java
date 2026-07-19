@@ -2,10 +2,12 @@ package dev.arpit.learning.commonUtils.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.List;
+
 import lombok.NonNull;
 
 public class StringUtils {
-  public static boolean isStringEmptyOrNull(String str) {
+  public static boolean isEmptyOrNull(String str) {
     if (str == null) {
       return true;
     }
@@ -57,5 +59,41 @@ public class StringUtils {
   public static String decode(String encodedStr, String format)
       throws UnsupportedEncodingException {
     return URLDecoder.decode(encodedStr, format);
+  }
+
+  public static <T> @NonNull String getTokenSeparatedString(
+      @NonNull List<T> objects, @NonNull String token) {
+    if (objects.isEmpty() || !isEmptyOrNull(token)) {
+      return "";
+    }
+
+    StringBuilder sb = new StringBuilder();
+    for (Object curr : objects) {
+      sb.append(curr);
+      sb.append(token);
+    }
+    sb.delete(sb.length() - token.length(), sb.length());
+    return sb.toString();
+  }
+
+  public static @NonNull String capitalizeEachWord(@NonNull String text) {
+    String[] words = text.split(" ");
+    for (int i = 0; i < words.length; i++) {
+      String word = words[i];
+      word = org.springframework.util.StringUtils.capitalize(word);
+      words[i] = word;
+    }
+
+    return String.join(" ", words);
+  }
+
+  public static @NonNull String trimIfNotNull(String checkStr) {
+    if (checkStr == null) return "";
+    return checkStr.trim();
+  }
+
+  public static String[] splitIfNotNull(String str, @NonNull String tokenSeparator) {
+    String trimmed = trimIfNotNull(str);
+    return trimmed.split(tokenSeparator);
   }
 }
