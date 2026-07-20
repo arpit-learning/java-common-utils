@@ -1,6 +1,6 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.crypto;
 
-import dev.arpit.learning.commonUtils.constants.CommonUtilLogConstants;
+import dev.arpit.learning.commonUtils.constants.LogConstant;
 import dev.arpit.learning.logger.core.ILogger;
 import dev.arpit.learning.logger.core.LoggerFactory;
 import java.util.Collections;
@@ -11,7 +11,7 @@ public class MaskingUtils {
   private static final ILogger logger = LoggerFactory.getLogger(MaskingUtils.class);
 
   public static @NonNull String getMaskedName(@NonNull String name) {
-    logger.info(CommonUtilLogConstants.MASKING_NAME_STARTED);
+    logger.info(LogConstant.MASKING_NAME_STARTED);
     StringBuilder maskedNameBuilder = new StringBuilder();
     boolean firstWord = true;
     if (StringUtils.hasText(name)) {
@@ -29,12 +29,12 @@ public class MaskingUtils {
         firstWord = false;
       }
     }
-    logger.info(CommonUtilLogConstants.MASKING_NAME_DONE);
+    logger.info(LogConstant.MASKING_NAME_DONE);
     return maskedNameBuilder.toString();
   }
 
   public static @NonNull String getMaskedEmail(@NonNull String email) {
-    logger.info(CommonUtilLogConstants.MASKING_EMAIL_STARTED);
+    logger.info(LogConstant.MASKING_EMAIL_STARTED);
     StringBuilder maskedEmailBuilder = new StringBuilder();
     if (StringUtils.hasText(email)) {
       String emailHead = email.substring(0, email.lastIndexOf("@"));
@@ -47,12 +47,12 @@ public class MaskingUtils {
       }
       maskedEmailBuilder.append(emailHead).append(emailTail);
     }
-    logger.info(CommonUtilLogConstants.MASKING_EMAIL_DONE);
+    logger.info(LogConstant.MASKING_EMAIL_DONE);
     return maskedEmailBuilder.toString();
   }
 
   public static @NonNull String getMaskedMobileNumber(@NonNull String mobileNumber) {
-    logger.info(CommonUtilLogConstants.MASKING_MOBILE_STARTED);
+    logger.info(LogConstant.MASKING_MOBILE_STARTED);
     String maskedMobileNumber = "";
     if (StringUtils.hasText(mobileNumber)) {
       maskedMobileNumber =
@@ -60,7 +60,7 @@ public class MaskingUtils {
               + String.join("", Collections.nCopies(mobileNumber.length() - 4, "*"))
               + mobileNumber.substring(mobileNumber.length() - 2);
     }
-    logger.info(CommonUtilLogConstants.MASKING_MOBILE_DONE);
+    logger.info(LogConstant.MASKING_MOBILE_DONE);
     return maskedMobileNumber;
   }
 }

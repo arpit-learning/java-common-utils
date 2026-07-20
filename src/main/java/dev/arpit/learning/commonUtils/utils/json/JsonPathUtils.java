@@ -1,4 +1,4 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.json;
 
 import com.jayway.jsonpath.JsonPath;
 import org.springframework.lang.NonNull;

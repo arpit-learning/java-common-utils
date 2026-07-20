@@ -1,7 +1,8 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.restclient;
 
-import dev.arpit.learning.commonUtils.constants.CommonUtilLogConstants;
-import dev.arpit.learning.commonUtils.constants.CommonUtilLogFieldConstants;
+import dev.arpit.learning.commonUtils.constants.LogConstant;
+import dev.arpit.learning.commonUtils.constants.LogConstantFields;
+import dev.arpit.learning.commonUtils.utils.core.StringUtils;
 import dev.arpit.learning.logger.core.ILogger;
 import dev.arpit.learning.logger.core.LoggerFactory;
 import java.io.File;
@@ -9,7 +10,6 @@ import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.time.Duration;
-import java.util.HashMap;
 import java.util.Map;
 import lombok.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -32,7 +32,7 @@ public class RestTemplateUtils {
           .build();
 
   private static @NonNull URI buildUri(
-      @NonNull String url, @Nullable HashMap<String, String> queryParams, Object... uriVariables) {
+      @NonNull String url, @Nullable Map<String, String> queryParams, Object... uriVariables) {
     MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
 
     if (queryParams != null) {
@@ -48,8 +48,7 @@ public class RestTemplateUtils {
     return UriComponentsBuilder.fromUriString(url).queryParams(params).build().toUri();
   }
 
-  private static @NonNull HttpHeaders getRequestHeaders(
-      @NonNull HashMap<String, String> headerMap) {
+  private static @NonNull HttpHeaders getRequestHeaders(@NonNull Map<String, String> headerMap) {
     HttpHeaders headers = new HttpHeaders();
     for (Map.Entry<String, String> entry : headerMap.entrySet()) {
       headers.add(entry.getKey(), entry.getValue());
@@ -58,7 +57,7 @@ public class RestTemplateUtils {
   }
 
   private static <T> @NonNull HttpEntity<T> getRequestEntity(
-      @Nullable T body, @Nullable HashMap<String, String> headers) {
+      @Nullable T body, @Nullable Map<String, String> headers) {
     if (headers != null) {
       return new HttpEntity<>(body, getRequestHeaders(headers));
     }
@@ -82,29 +81,29 @@ public class RestTemplateUtils {
               .build();
     }
     logger.info(
-        CommonUtilLogConstants.MAKING_HTTP_REQUEST,
-        CommonUtilLogFieldConstants.URI,
+        LogConstant.MAKING_HTTP_REQUEST,
+        LogConstantFields.URI,
         uri,
-        CommonUtilLogFieldConstants.HTTP_METHOD,
+        LogConstantFields.HTTP_METHOD,
         httpMethod,
-        CommonUtilLogFieldConstants.HTTP_ENTITY,
+        LogConstantFields.HTTP_ENTITY,
         requestEntity,
-        CommonUtilLogFieldConstants.CONNECTION_TIMEOUT,
+        LogConstantFields.CONNECTION_TIMEOUT,
         connectTimeout,
-        CommonUtilLogFieldConstants.READ_TIMEOUT,
+        LogConstantFields.READ_TIMEOUT,
         readTimeout);
     try {
       ResponseEntity<T> httpResponse =
           templateToUse.exchange(uri, httpMethod, requestEntity, responseType);
       logger.info(
-          CommonUtilLogConstants.COMPLETED_HTTP_REQUEST,
-          CommonUtilLogFieldConstants.URI,
+          LogConstant.COMPLETED_HTTP_REQUEST,
+          LogConstantFields.URI,
           uri,
-          CommonUtilLogFieldConstants.HTTP_RESPONSE,
+          LogConstantFields.HTTP_RESPONSE,
           httpResponse);
       return httpResponse;
     } catch (RuntimeException e) {
-      logger.error(CommonUtilLogConstants.RUNTIME_EXCEPTION_EXC_WHILE_CALLING_API, e);
+      logger.error(LogConstant.RUNTIME_EXCEPTION_EXC_WHILE_CALLING_API, e);
       throw e;
     }
   }
@@ -121,9 +120,9 @@ public class RestTemplateUtils {
       @NonNull String url,
       @NonNull HttpMethod httpMethod,
       @NonNull Class<T> responseType,
-      @Nullable HashMap<String, Object> bodyParams,
-      @Nullable HashMap<String, String> queryParams,
-      @Nullable HashMap<String, String> headers,
+      @Nullable Map<String, Object> bodyParams,
+      @Nullable Map<String, String> queryParams,
+      @Nullable Map<String, String> headers,
       int connectTimeout,
       int readTimeout,
       Object... uriVariables) {
@@ -140,9 +139,9 @@ public class RestTemplateUtils {
       @NonNull String url,
       @NonNull HttpMethod httpMethod,
       @NonNull Class<T> responseType,
-      @Nullable HashMap<String, Object> bodyParams,
-      @Nullable HashMap<String, String> queryParams,
-      @Nullable HashMap<String, String> headers,
+      @Nullable Map<String, Object> bodyParams,
+      @Nullable Map<String, String> queryParams,
+      @Nullable Map<String, String> headers,
       Object... uriVariables) {
     return makeHTTPRequest(
         buildUri(url, queryParams, uriVariables),
@@ -156,10 +155,7 @@ public class RestTemplateUtils {
   private static @NonNull HttpEntity<MultiValueMap<String, Object>> getCSVAsStreamRequestEntity(
       @NonNull String paramName, @NonNull String fileName, @NonNull String dataToSend) {
     MultiValueMap<String, Object> bodyMap = new LinkedMultiValueMap<>();
-    logger.info(
-        CommonUtilLogConstants.DATA_SENT_FOR_THE_CSV,
-        CommonUtilLogFieldConstants.DATA_TO_SEND,
-        dataToSend);
+    logger.info(LogConstant.DATA_SENT_FOR_THE_CSV, LogConstantFields.DATA_TO_SEND, dataToSend);
     ByteArrayResource contentsAsResource =
         new ByteArrayResource(dataToSend.getBytes(StandardCharsets.UTF_8)) {
           @Override
@@ -207,12 +203,12 @@ public class RestTemplateUtils {
       @NonNull String url,
       @NonNull String filepath,
       @NonNull HttpMethod httpMethod,
-      @Nullable HashMap<String, Object> bodyParams,
-      @Nullable HashMap<String, String> queryParams,
-      @Nullable HashMap<String, String> headers) {
+      @Nullable Map<String, Object> bodyParams,
+      @Nullable Map<String, String> queryParams,
+      @Nullable Map<String, String> headers) {
     ResponseEntity<byte[]> response;
     try {
-      HttpEntity<HashMap<String, Object>> requestEntity = getRequestEntity(bodyParams, headers);
+      HttpEntity<Map<String, Object>> requestEntity = getRequestEntity(bodyParams, headers);
       response =
           makeHTTPRequest(buildUri(url, queryParams), httpMethod, requestEntity, byte[].class);
       byte[] responseBody = response.getBody();
@@ -220,17 +216,14 @@ public class RestTemplateUtils {
         return new ResponseEntity<>((byte[]) null, HttpStatus.NO_CONTENT);
       }
       if (response.getStatusCode() == HttpStatus.OK) {
-        logger.info(
-            CommonUtilLogConstants.API_RESPONSE,
-            CommonUtilLogFieldConstants.STATUS_CODE,
-            HttpStatus.OK);
+        logger.info(LogConstant.API_RESPONSE, LogConstantFields.STATUS_CODE, HttpStatus.OK);
       } else if (response.getStatusCode() == HttpStatus.PARTIAL_CONTENT) {
         logger.debug(
-            CommonUtilLogConstants.API_RESPONSE,
-            CommonUtilLogFieldConstants.STATUS_CODE,
+            LogConstant.API_RESPONSE,
+            LogConstantFields.STATUS_CODE,
             HttpStatus.PARTIAL_CONTENT,
-            CommonUtilLogFieldConstants.MSG,
-            CommonUtilLogFieldConstants.PERFORM_MORE_ITERATIONS);
+            LogConstantFields.MSG,
+            LogConstantFields.PERFORM_MORE_ITERATIONS);
       }
       File file = new File(filepath);
       File parent = file.getParentFile();
@@ -238,15 +231,15 @@ public class RestTemplateUtils {
         boolean created = parent.mkdirs();
         if (!created) {
           logger.error(
-              CommonUtilLogConstants.EXCEPTION,
-              CommonUtilLogFieldConstants.ERR_MSG,
+              LogConstant.EXCEPTION,
+              LogConstantFields.ERR_MSG,
               "Failed to create parent directories");
         }
       }
       Files.write(file.toPath(), responseBody);
       return response;
     } catch (Exception e) {
-      logger.error(CommonUtilLogConstants.EXCEPTION, CommonUtilLogFieldConstants.ERR_MSG, e);
+      logger.error(LogConstant.EXCEPTION, LogConstantFields.ERR_MSG, e);
     }
 
     return new ResponseEntity<>((byte[]) null, HttpStatus.NO_CONTENT);

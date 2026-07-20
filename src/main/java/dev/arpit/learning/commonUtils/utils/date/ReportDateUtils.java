@@ -1,6 +1,6 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.date;
 
-import dev.arpit.learning.commonUtils.constants.CommonUtilLogConstants;
+import dev.arpit.learning.commonUtils.constants.LogConstant;
 import dev.arpit.learning.commonUtils.models.Pair;
 import dev.arpit.learning.logger.core.ILogger;
 import dev.arpit.learning.logger.core.LoggerFactory;
@@ -33,7 +33,7 @@ public class ReportDateUtils {
               fromDate,
               LocalDate.parse(toDate, formatter).isAfter(date) ? date.format(formatter) : toDate));
     } catch (DateTimeParseException e) {
-      logger.error(CommonUtilLogConstants.UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT, e);
+      logger.error(LogConstant.UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT, e);
     }
 
     LocalDate localDate = date;

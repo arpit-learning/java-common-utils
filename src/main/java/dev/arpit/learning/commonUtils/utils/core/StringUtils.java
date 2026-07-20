@@ -1,18 +1,25 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.core;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.List;
-
 import lombok.NonNull;
 
 public class StringUtils {
-  public static boolean isEmptyOrNull(String str) {
+  public static boolean isNullOrEmpty(String str) {
     if (str == null) {
       return true;
     }
 
     return !org.springframework.util.StringUtils.hasText(str);
+  }
+
+  public static boolean isNotNullOrEmpty(String str) {
+    return !isNullOrEmpty(str);
+  }
+
+  public static String defaultIfNullOrEmpty(String str, String defaultStr) {
+    return isNullOrEmpty(str) ? defaultStr : str;
   }
 
   /**
@@ -61,9 +68,8 @@ public class StringUtils {
     return URLDecoder.decode(encodedStr, format);
   }
 
-  public static <T> @NonNull String getTokenSeparatedString(
-      @NonNull List<T> objects, @NonNull String token) {
-    if (objects.isEmpty() || !isEmptyOrNull(token)) {
+  public static <T> @NonNull String join(@NonNull List<T> objects, @NonNull String token) {
+    if (objects.isEmpty() || !isNullOrEmpty(token)) {
       return "";
     }
 
@@ -95,5 +101,71 @@ public class StringUtils {
   public static String[] splitIfNotNull(String str, @NonNull String tokenSeparator) {
     String trimmed = trimIfNotNull(str);
     return trimmed.split(tokenSeparator);
+  }
+
+  public static String substringBefore(String str, String separator) {
+    if (isNullOrEmpty(str) || separator == null) {
+      return str;
+    }
+    if (separator.isEmpty()) {
+      return "";
+    }
+    int pos = str.indexOf(separator);
+    if (pos == -1) {
+      return str;
+    }
+    return str.substring(0, pos);
+  }
+
+  public static String substringAfter(String str, String separator) {
+    if (isNullOrEmpty(str)) {
+      return str;
+    }
+    if (separator == null) {
+      return "";
+    }
+    int pos = str.indexOf(separator);
+    if (pos == -1) {
+      return "";
+    }
+    return str.substring(pos + separator.length());
+  }
+
+  public static boolean containsIgnoreCase(String str, String searchStr) {
+    if (str == null || searchStr == null) {
+      return false;
+    }
+    int length = searchStr.length();
+    if (length == 0) {
+      return true;
+    }
+    for (int i = str.length() - length; i >= 0; i--) {
+      if (str.regionMatches(true, i, searchStr, 0, length)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public static String padLeft(String str, int length, char padChar) {
+    if (str == null) {
+      str = "";
+    }
+    int pads = length - str.length();
+    if (pads <= 0) {
+      return str;
+    }
+    return String.valueOf(padChar).repeat(pads) + str;
+  }
+
+  public static String padRight(String str, int length, char padChar) {
+    if (str == null) {
+      str = "";
+    }
+    int pads = length - str.length();
+    if (pads <= 0) {
+      return str;
+    }
+    return str + String.valueOf(padChar).repeat(pads);
   }
 }

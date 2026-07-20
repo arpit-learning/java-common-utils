@@ -1,4 +1,4 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.core;
 
 import lombok.NonNull;
 import org.springframework.context.ApplicationContext;

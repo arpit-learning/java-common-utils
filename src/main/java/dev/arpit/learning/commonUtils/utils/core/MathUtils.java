@@ -1,4 +1,4 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.core;
 
 import com.github.f4b6a3.uuid.UuidCreator;
 import java.security.SecureRandom;
@@ -13,11 +13,7 @@ public class MathUtils {
   }
 
   public static boolean checkFloatContainsDecimal(Float value) {
-    if (value == null) {
-      return false;
-    }
-
-    return value - value.intValue() != 0;
+    return value != null && value % 1 != 0;
   }
 
   public static boolean returnRandom(int totalRange, int rangeBoundary) {
@@ -32,5 +28,15 @@ public class MathUtils {
 
   public static @NonNull UUID generateUUIDV7() {
     return UuidCreator.getTimeOrderedEpoch();
+  }
+
+  public static int clamp(int value, int min, int max) {
+    if (min > max) throw new IllegalArgumentException("min cannot be greater than max");
+    return Math.max(min, Math.min(max, value));
+  }
+
+  public static double clamp(double value, double min, double max) {
+    if (min > max) throw new IllegalArgumentException("min cannot be greater than max");
+    return Math.max(min, Math.min(max, value));
   }
 }

@@ -3,7 +3,7 @@ package dev.arpit.learning.commonUtils.constants;
 import dev.arpit.learning.logger.models.IMessageConstant;
 import lombok.Getter;
 
-public enum CommonUtilLogConstants implements IMessageConstant {
+public enum LogConstant implements IMessageConstant {
   STRING_TO_LIST_CONVERSION_EXC("STRING_TO_LIST_CONVERSION_EXC", "APP_VL_068"),
   UNABLE_TO_PROCESS_STRING("UNABLE_TO_PROCESS_STRING", "APP_VL_067"),
   EMPTY_STRING_FOUND("EMPTY_STRING_FOUND", "APP_VL_066"),
@@ -35,16 +35,17 @@ public enum CommonUtilLogConstants implements IMessageConstant {
   SOME_EXC_WHILE_CALLING_API("SOME_EXC_WHILE_CALLING_API", "APP_SE_804"),
   DATA_SENT_FOR_THE_CSV("DATA_SENT_FOR_THE_CSV"),
   EXCEPTION("EXCEPTION", "APP_VL_036"),
-  API_RESPONSE("API_RESPONSE");
+  API_RESPONSE("API_RESPONSE"),
+  VALIDATOR_NOT_FOUND("Null or empty validator found");
 
   private final String message;
   @Getter private final String shortCode;
 
-  CommonUtilLogConstants(String message) {
+  LogConstant(String message) {
     this(message, null);
   }
 
-  CommonUtilLogConstants(String message, String shortCode) {
+  LogConstant(String message, String shortCode) {
     this.message = message;
     this.shortCode = shortCode;
   }

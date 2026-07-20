@@ -1,24 +1,19 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.csv;
 
+import dev.arpit.learning.commonUtils.exceptions.CSVFieldRuleException;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import lombok.Data;
 import lombok.NonNull;
 
 public class CSVValidator {
   @Data
   public static class ColumnSchema {
-    private boolean isEmptyAllowed;
-    private boolean isNullAllowed;
-    private @NonNull String regex;
     private @NonNull String columnName;
+    private @NonNull List<ICSVFieldRule> rules;
   }
 
   public static String REGEX_BOOLEAN = "[0-1]";
-
   public static String REGEX_DECIMAL = "[0-9]";
-
   public static String REGEX_STRING_WITH_SPECIAL_CHARACTERS = "^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$";
 
   public static @NonNull String validateCsvRow(
@@ -46,29 +41,16 @@ public class CSVValidator {
     int i = 0;
     for (ColumnSchema columnSchema : columnSchemas) {
       String entry = row[i++].trim();
-      if (!columnSchema.isEmptyAllowed && entry.trim().isEmpty()) {
-        resultBuilder
-            .append("Empty value is not allowed for field: ")
-            .append(columnSchema.columnName)
-            .append("; ");
-      }
-      if (!columnSchema.isNullAllowed && entry.equalsIgnoreCase("NULL")) {
-        resultBuilder
-            .append("Null is not allowed for field: ")
-            .append(columnSchema.columnName)
-            .append("; ");
-      }
-
-      Pattern pattern = Pattern.compile(columnSchema.regex);
-      Matcher matcher = pattern.matcher(entry);
-
-      if (!matcher.find()) {
-        resultBuilder
-            .append("Value: ")
-            .append(entry)
-            .append(" entered is not supported for field: ")
-            .append(columnSchema.columnName)
-            .append("; ");
+      for (ICSVFieldRule rule : columnSchema.getRules()) {
+        String error = null;
+        try {
+          rule.validate(columnSchema.getColumnName(), entry);
+        } catch (CSVFieldRuleException e) {
+          error = e.getMessage();
+        }
+        if (error != null && !error.isEmpty()) {
+          resultBuilder.append(error).append("; ");
+        }
       }
     }
 

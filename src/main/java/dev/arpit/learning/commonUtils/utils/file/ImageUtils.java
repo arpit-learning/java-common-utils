@@ -1,4 +1,4 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.file;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

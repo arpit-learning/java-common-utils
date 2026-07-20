@@ -1,7 +1,7 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.date;
 
-import dev.arpit.learning.commonUtils.constants.CommonUtilLogConstants;
-import dev.arpit.learning.commonUtils.constants.CommonUtilLogFieldConstants;
+import dev.arpit.learning.commonUtils.constants.LogConstant;
+import dev.arpit.learning.commonUtils.constants.LogConstantFields;
 import dev.arpit.learning.commonUtils.models.Pair;
 import dev.arpit.learning.logger.core.ILogger;
 import dev.arpit.learning.logger.core.LoggerFactory;
@@ -28,8 +28,7 @@ public class DatetimeUtils {
   }
 
   public static @NonNull String getFormattedCurrentTimestamp() {
-    return getFormattedTimestamp(
-        getCurrentTimestamp(), CommonUtilLogConstants.TIMESTAMP_FORMAT.getMessage());
+    return getFormattedTimestamp(getCurrentTimestamp(), LogConstant.TIMESTAMP_FORMAT.getMessage());
   }
 
   public static @NonNull String getFormattedCurrentTimestamp(@NonNull String datetimeFormat) {
@@ -46,7 +45,7 @@ public class DatetimeUtils {
       DateTimeFormatter format = DateTimeFormatter.ofPattern(datetimeFormat);
       return format.parse(datetime, LocalDateTime::from);
     } catch (DateTimeParseException e) {
-      logger.error(CommonUtilLogConstants.UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT, e);
+      logger.error(LogConstant.UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT, e);
       return null;
     }
   }
@@ -56,12 +55,9 @@ public class DatetimeUtils {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern(datetimeFormat);
     try {
       LocalDate.parse(datetime, formatter);
-      logger.debug(
-          CommonUtilLogConstants.VALID_DATE_FORMAT_FOUND,
-          CommonUtilLogFieldConstants.DATE,
-          datetime);
+      logger.debug(LogConstant.VALID_DATE_FORMAT_FOUND, LogConstantFields.DATE, datetime);
     } catch (DateTimeParseException e) {
-      logger.error(CommonUtilLogConstants.INVALID_DATE_ERROR, e);
+      logger.error(LogConstant.INVALID_DATE_ERROR, e);
       return false;
     }
 
@@ -125,7 +121,7 @@ public class DatetimeUtils {
         data.put("completedWeek", false);
       }
     } catch (DateTimeParseException e) {
-      logger.error(CommonUtilLogConstants.UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT, e);
+      logger.error(LogConstant.UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT, e);
     }
 
     return data;
@@ -179,5 +175,18 @@ public class DatetimeUtils {
     String from = firstDayOfWeek.format(formatter);
     String to = date.format(formatter);
     return new Pair<>(from, to);
+  }
+
+  public static @NonNull LocalDateTime getTodayWithZeroTime() {
+    return LocalDate.now().atStartOfDay();
+  }
+
+  public static boolean isWeekend(@NonNull LocalDate date) {
+    DayOfWeek day = date.getDayOfWeek();
+    return day == DayOfWeek.SATURDAY || day == DayOfWeek.SUNDAY;
+  }
+
+  public static @NonNull LocalDateTime getEndOfDay(@NonNull LocalDate date) {
+    return date.atTime(LocalTime.MAX);
   }
 }

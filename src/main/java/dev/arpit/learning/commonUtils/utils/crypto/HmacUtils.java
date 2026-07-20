@@ -1,4 +1,4 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.crypto;
 
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;

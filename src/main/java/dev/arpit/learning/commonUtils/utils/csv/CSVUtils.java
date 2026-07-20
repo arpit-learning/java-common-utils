@@ -1,9 +1,9 @@
-package dev.arpit.learning.commonUtils.utils;
+package dev.arpit.learning.commonUtils.utils.csv;
 
 import com.fasterxml.jackson.databind.SequenceWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
-import dev.arpit.learning.commonUtils.constants.CommonUtilLogConstants;
+import dev.arpit.learning.commonUtils.constants.LogConstant;
 import dev.arpit.learning.logger.core.ILogger;
 import dev.arpit.learning.logger.core.LoggerFactory;
 import java.io.*;
@@ -102,7 +102,7 @@ public class CSVUtils {
         }
       }
     } catch (Exception e) {
-      logger.error(CommonUtilLogConstants.WRITING_CSV_ERR, e);
+      logger.error(LogConstant.WRITING_CSV_ERR, e);
     }
   }
 
