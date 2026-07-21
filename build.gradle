@@ -8,7 +8,6 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'java-library'
     id 'maven-publish'
     id 'jacoco'
     id "org.springframework.boot" version "4.1.0"
@@ -100,6 +99,22 @@ dependencyCheck {
     // requires NVD data or use the same Docker command as ci-security.yml.
 }
 
+dependencyAnalysis {
+    issues {
+        all {
+            onAny {
+                severity("fail")
+            }
+            onUnusedDependencies {
+                exclude("org.hamcrest:hamcrest")
+            }
+        }
+    }
+    reporting {
+        printBuildHealth(true)
+    }
+}
+
 publishing {
     publications {
         mavenJava(MavenPublication) {
@@ -128,16 +143,34 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.jayway.jsonpath:json-path'
-    implementation 'com.github.f4b6a3:uuid-creator:6.1.1'
-    implementation 'dev.arpit.learning:java-logger:0.0.4'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-restclient'
-    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
-    implementation platform("com.amazonaws:aws-java-sdk-bom:1.12.797")
-    implementation platform('org.springframework.boot:spring-boot-dependencies:4.1.0')
-    testImplementation platform('org.junit:junit-bom:6.1.2')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    annotationProcessor ('org.projectlombok:lombok')
+    runtimeOnly ('ch.qos.logback:logback-classic')
+    runtimeOnly ('io.micrometer:micrometer-observation')
+    runtimeOnly ('org.apache.logging.log4j:log4j-api')
+    runtimeOnly ('org.apache.logging.log4j:log4j-to-slf4j')
+    runtimeOnly ('org.apache.tomcat.embed:tomcat-embed-el')
+    runtimeOnly ('org.apache.tomcat.embed:tomcat-embed-websocket')
+    runtimeOnly ('org.springframework.boot:spring-boot')
+    runtimeOnly ('tools.jackson.core:jackson-core')
+    runtimeOnly ('tools.jackson.core:jackson-databind')
+    implementation ('com.jayway.jsonpath:json-path')
+    implementation ('com.github.f4b6a3:uuid-creator:6.1.1')
+    implementation ('dev.arpit.learning:java-logger:0.0.6')
+    implementation ('com.fasterxml.jackson.dataformat:jackson-dataformat-csv')
+    implementation ('com.fasterxml.jackson.core:jackson-core')
+    implementation ('com.fasterxml.jackson.core:jackson-databind')
+    implementation ('org.springframework.boot:spring-boot-restclient')
+    implementation ('org.springframework:spring-context')
+    implementation ('org.springframework:spring-core')
+    implementation ('org.springframework:spring-web')
+    implementation platform ('com.amazonaws:aws-java-sdk-bom:1.12.797')
+    implementation platform ('org.springframework.boot:spring-boot-dependencies:4.1.0')
+    testRuntimeOnly ('org.junit.platform:junit-platform-launcher')
+    testRuntimeOnly ('org.junit.jupiter:junit-jupiter-engine')
+    testImplementation ('org.junit.jupiter:junit-jupiter-api')
+    testImplementation ('org.mockito:mockito-core')
+    testImplementation ('org.mockito:mockito-junit-jupiter')
+    testImplementation ('org.springframework:spring-test')
+    testImplementation ('org.hamcrest:hamcrest')
+    testImplementation platform ('org.junit:junit-bom:6.1.2')
 }

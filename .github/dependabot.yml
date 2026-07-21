@@ -1,0 +1,23 @@
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    target-branch: "staging"
+    schedule:
+      interval: "daily"
+      time: "21:00"
+    labels:
+      - "dependencies"
+      - "ci"
+
+  # Maintain dependencies for Gradle
+  - package-ecosystem: "gradle"
+    directory: "/"
+    target-branch: "staging"
+    schedule:
+      interval: "daily"
+      time: "21:00"
+    labels:
+      - "dependencies"
+      - "java"
