@@ -31,8 +31,8 @@ public class RestTemplateUtils {
           .readTimeout(Duration.ofSeconds(READ_TIMEOUT))
           .build();
 
-  private static @NonNull URI buildUri(
-      @NonNull String url, @Nullable Map<String, String> queryParams, Object... uriVariables) {
+  private static URI buildUri(
+      String url, @Nullable Map<String, String> queryParams, Object... uriVariables) {
     MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
 
     if (queryParams != null) {
@@ -48,7 +48,7 @@ public class RestTemplateUtils {
     return UriComponentsBuilder.fromUriString(url).queryParams(params).build().toUri();
   }
 
-  private static @NonNull HttpHeaders getRequestHeaders(@NonNull Map<String, String> headerMap) {
+  private static HttpHeaders getRequestHeaders(Map<String, String> headerMap) {
     HttpHeaders headers = new HttpHeaders();
     for (Map.Entry<String, String> entry : headerMap.entrySet()) {
       headers.add(entry.getKey(), entry.getValue());
@@ -152,8 +152,8 @@ public class RestTemplateUtils {
         -1);
   }
 
-  private static @NonNull HttpEntity<MultiValueMap<String, Object>> getCSVAsStreamRequestEntity(
-      @NonNull String paramName, @NonNull String fileName, @NonNull String dataToSend) {
+  private static HttpEntity<MultiValueMap<String, Object>> getCSVAsStreamRequestEntity(
+      String paramName, String fileName, String dataToSend) {
     MultiValueMap<String, Object> bodyMap = new LinkedMultiValueMap<>();
     logger.info(LogConstant.DATA_SENT_FOR_THE_CSV, LogConstantFields.DATA_TO_SEND, dataToSend);
     ByteArrayResource contentsAsResource =

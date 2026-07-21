@@ -9,7 +9,7 @@ import lombok.NonNull;
 public class RegexUtils {
   private static final Map<String, Pattern> mPatternCache = new ConcurrentHashMap<>();
 
-  private static @NonNull Pattern getPattern(@NonNull String regex) {
+  private static @NonNull Pattern getPattern(String regex) {
     return mPatternCache.computeIfAbsent(regex, Pattern::compile);
   }
 

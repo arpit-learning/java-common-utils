@@ -23,7 +23,7 @@ public class RegexRule implements ICSVFieldRule {
     }
 
     Matcher matcher = pattern.matcher(value);
-    if (!matcher.find()) {
+    if (!matcher.matches()) {
       throw new CSVFieldRuleException(
           "Value: "
               + value

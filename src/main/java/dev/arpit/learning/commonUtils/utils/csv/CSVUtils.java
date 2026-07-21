@@ -24,7 +24,7 @@ public class CSVUtils {
   }
 
   private static @NonNull String[] collectHeadersOrdered(
-      @NonNull List<LinkedHashMap<String, String>> flatJson) {
+      List<LinkedHashMap<String, String>> flatJson) {
     LinkedHashSet<String> headers = new LinkedHashSet<>();
     for (Map<String, String> linkedMap : flatJson) {
       headers.addAll(linkedMap.keySet());
@@ -33,7 +33,7 @@ public class CSVUtils {
   }
 
   private static @NonNull String[] getRowOrdered(
-      @NonNull String[] headers, @NonNull LinkedHashMap<String, String> map) {
+      String[] headers, LinkedHashMap<String, String> map) {
     List<String> items = new ArrayList<>();
 
     for (String header : headers) {
@@ -45,7 +45,7 @@ public class CSVUtils {
   }
 
   private static @NonNull List<@NonNull String[]> getRowsOrdered(
-      @NonNull String[] headers, @NonNull List<LinkedHashMap<String, String>> maps) {
+      String[] headers, List<LinkedHashMap<String, String>> maps) {
     List<@NonNull String[]> rows = new ArrayList<>();
 
     for (LinkedHashMap<String, String> map : maps) {
@@ -55,17 +55,12 @@ public class CSVUtils {
     return rows;
   }
 
-  private static @NonNull Map<String, String> toRowMap(
-      @NonNull String[] headers, @NonNull String[] row) {
+  private static @NonNull Map<String, String> toRowMap(String[] headers, String[] row) {
     Map<String, String> rowMap = new LinkedHashMap<>();
 
     int length = Math.min(headers.length, row.length);
     for (int i = 0; i < length; i++) {
       rowMap.put(headers[i], row[i]);
-    }
-
-    for (int i = length; i < headers.length; i++) {
-      rowMap.put(headers[i], "");
     }
 
     return rowMap;
@@ -111,7 +106,7 @@ public class CSVUtils {
       @NonNull List<LinkedHashMap<String, String>> flatJson,
       boolean shouldAppend) {
     String[] headers = collectHeadersOrdered(flatJson);
-    List<@NonNull String[]> data = getRowsOrdered(headers, flatJson);
+    List<String[]> data = getRowsOrdered(headers, flatJson);
     generateCSV(absoluteFilePath, headers, data, shouldAppend);
   }
 }

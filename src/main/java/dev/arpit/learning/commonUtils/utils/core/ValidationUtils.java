@@ -113,6 +113,12 @@ public class ValidationUtils {
       throws EmptyValidatorNotFoundException {
     if (obj == null) return true;
 
+    if (validators.containsKey(resolvableType)) {
+      @SuppressWarnings("unchecked")
+      IEmptyValidator<Object> validator = (IEmptyValidator<Object>) validators.get(resolvableType);
+      return validator.isEmpty(obj);
+    }
+
     for (Map.Entry<ResolvableType, IEmptyValidator<?>> entry : validators.entrySet()) {
       if (entry.getKey().isAssignableFrom(resolvableType)) {
         @SuppressWarnings("unchecked")
@@ -136,7 +142,7 @@ public class ValidationUtils {
     if (args == null) return true;
 
     for (Pair<Object, ResolvableType> arg : args) {
-      if (arg == null || arg.first() == null) return true;
+      if (arg == null) return true;
       if (isNullOrEmpty(arg.first(), arg.second())) {
         return true;
       }

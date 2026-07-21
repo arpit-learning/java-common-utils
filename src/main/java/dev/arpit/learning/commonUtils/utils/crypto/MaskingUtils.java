@@ -53,13 +53,15 @@ public class MaskingUtils {
 
   public static @NonNull String getMaskedMobileNumber(@NonNull String mobileNumber) {
     logger.info(LogConstant.MASKING_MOBILE_STARTED);
-    String maskedMobileNumber = "";
-    if (StringUtils.hasText(mobileNumber)) {
-      maskedMobileNumber =
-          mobileNumber.substring(0, 2)
-              + String.join("", Collections.nCopies(mobileNumber.length() - 4, "*"))
-              + mobileNumber.substring(mobileNumber.length() - 2);
+    if (mobileNumber.length() != 10) {
+      throw new IllegalArgumentException("Invalid mobile number length");
     }
+
+    String maskedMobileNumber =
+        mobileNumber.substring(0, 2)
+            + String.join("", Collections.nCopies(mobileNumber.length() - 4, "*"))
+            + mobileNumber.substring(mobileNumber.length() - 2);
+
     logger.info(LogConstant.MASKING_MOBILE_DONE);
     return maskedMobileNumber;
   }

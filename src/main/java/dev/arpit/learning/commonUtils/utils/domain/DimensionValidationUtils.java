@@ -1,5 +1,8 @@
 package dev.arpit.learning.commonUtils.utils.domain;
 
+import static dev.arpit.learning.commonUtils.utils.core.StringUtils.isNotNullOrEmpty;
+import static dev.arpit.learning.commonUtils.utils.core.StringUtils.isNullOrEmpty;
+
 import dev.arpit.learning.commonUtils.exceptions.EmptyValidatorNotFoundException;
 import dev.arpit.learning.commonUtils.models.Pair;
 import dev.arpit.learning.commonUtils.utils.core.ListConversionUtils;
@@ -16,59 +19,53 @@ import java.util.Map;
 import java.util.Set;
 import lombok.NonNull;
 import org.springframework.core.ResolvableType;
-import org.springframework.util.StringUtils;
 
 public class DimensionValidationUtils {
   private static final ILogger logger = LoggerFactory.getLogger(DimensionValidationUtils.class);
   private static final ResolvableType stringResolvableType = ResolvableType.forClass(String.class);
 
-  private static String getComplexDimAttr(String complexDimAttr) {
-    if (!StringUtils.hasText(complexDimAttr)) {
+  private static String getComplexDimensionAttribute(String complexDimensionAttribute) {
+    if (isNullOrEmpty(complexDimensionAttribute)) {
       return "";
     }
 
-    return complexDimAttr.replace(" ", "_").trim();
+    return complexDimensionAttribute.replace(" ", "_").trim();
   }
 
-  private static void validateDuplicateComplexDimAttr(
-      List<String> tempComplexDimAttrList, List<String> errMsgList) {
-    Set<String> complexDimAttrSet = new HashSet<String>(tempComplexDimAttrList);
-    if (tempComplexDimAttrList.size() != complexDimAttrSet.size()) {
-      errMsgList.add(
-          "Duplicate attribute is found in complex dim attribute as given "
-              + JsonUtils.toJsonString(tempComplexDimAttrList));
+  private static String validateDuplicateComplexDimensionAttributes(
+      List<String> complexDimensionAttributesList) {
+    Set<String> complexDimensionAttributesSet = new HashSet<>(complexDimensionAttributesList);
+
+    if (complexDimensionAttributesList.size() != complexDimensionAttributesSet.size()) {
+      return "Duplicate attribute is found in complex dimension attributes as given in "
+          + JsonUtils.toJsonString(complexDimensionAttributesList);
     }
+
+    return "";
   }
 
-  public static @NonNull Map<String, Object> validateComplexDimAttr(
-      String complexDimAttr, Set<String> categoryAttrSet, String tokenSeperator) {
+  public static @NonNull Map<String, Object> validateComplexDimensionAttribute(
+      String complexDimensionAttribute, Set<String> categoryAttributeSet, String delimiter) {
     Map<String, Object> response = new HashMap<>();
     List<String> errMsgList = new ArrayList<>();
 
     try {
-      if (ValidationUtils.isNullOrEmpty(new Pair<>(complexDimAttr, stringResolvableType))) {
-        response.put("complex_dim_attr", complexDimAttr);
+      if (ValidationUtils.isNullOrEmpty(
+          new Pair<>(complexDimensionAttribute, stringResolvableType))) {
+        response.put("complex_dim_attr", complexDimensionAttribute);
         return response;
       }
     } catch (EmptyValidatorNotFoundException e) {
       logger.error("EmptyValidatorNotFoundException", e);
     }
-    String[] complexDimAttrArray = complexDimAttr.trim().split(tokenSeperator);
+    String[] complexDimAttrArray = complexDimensionAttribute.trim().split(delimiter);
     String[] tempComplexDimArray = new String[complexDimAttrArray.length];
 
-    if (complexDimAttrArray.length < 1) {
-      /*
-       * errMsgList.add("Complex Dim attribute is invalid as given "+jsonUtils.
-       * toJsonString(complexDimAttr));
-       */
-      response.put("complex_dim_attr", "");
-      return response;
-    }
     int j = 0;
     for (int i = 0; i < complexDimAttrArray.length; i++) {
       String orgComplexDimAttr =
           complexDimAttrArray[i].trim(); // As few categories have space in attributes
-      String curComplexDimAttr = getComplexDimAttr(complexDimAttrArray[i].trim());
+      String curComplexDimAttr = getComplexDimensionAttribute(complexDimAttrArray[i].trim());
       try {
         if (ValidationUtils.isNullOrEmpty(new Pair<>(curComplexDimAttr, stringResolvableType))) {
           continue;
@@ -79,16 +76,16 @@ public class DimensionValidationUtils {
       complexDimAttrArray[i] = curComplexDimAttr;
       tempComplexDimArray[j++] = complexDimAttrArray[i];
 
-      if (categoryAttrSet != null
-          && ((!categoryAttrSet.contains(curComplexDimAttr))
-              && (!categoryAttrSet.contains(orgComplexDimAttr)))) {
+      if (categoryAttributeSet != null
+          && ((!categoryAttributeSet.contains(curComplexDimAttr))
+              && (!categoryAttributeSet.contains(orgComplexDimAttr)))) {
         errMsgList.add(
             "Complex Dim attribute = "
                 + orgComplexDimAttr
                 + ", is not part of category attribute value. ");
       }
-      if (categoryAttrSet != null
-          && categoryAttrSet.contains(
+      if (categoryAttributeSet != null
+          && categoryAttributeSet.contains(
               orgComplexDimAttr)) { // added the code to handle attributes with space as
         // getComplexDimAttr() replaces space with "_"
         int index = j - 1;
@@ -106,12 +103,16 @@ public class DimensionValidationUtils {
       return response;
     }
 
-    validateDuplicateComplexDimAttr(tempComplexDimAttrList, errMsgList);
+    String errMsg = validateDuplicateComplexDimensionAttributes(tempComplexDimAttrList);
+    if (isNotNullOrEmpty(errMsg)) {
+      errMsgList.add(errMsg);
+    }
+
     if (errMsgList.isEmpty()) {
       response.put(
           "complex_dim_attr",
           dev.arpit.learning.commonUtils.utils.core.StringUtils.join(
-              tempComplexDimAttrList, tokenSeperator));
+              tempComplexDimAttrList, delimiter));
       return response;
     }
     response.put("error", errMsgList);

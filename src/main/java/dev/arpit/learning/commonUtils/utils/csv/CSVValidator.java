@@ -1,12 +1,15 @@
 package dev.arpit.learning.commonUtils.utils.csv;
 
 import dev.arpit.learning.commonUtils.exceptions.CSVFieldRuleException;
+import dev.arpit.learning.commonUtils.utils.core.StringUtils;
 import java.util.List;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NonNull;
 
 public class CSVValidator {
   @Data
+  @AllArgsConstructor
   public static class ColumnSchema {
     private @NonNull String columnName;
     private @NonNull List<ICSVFieldRule> rules;
@@ -26,15 +29,13 @@ public class CSVValidator {
     rowValueBuilder.delete(rowValueBuilder.length() - 1, rowValueBuilder.length());
     String rowValue = rowValueBuilder.toString();
 
-    if (!(row.length == columnSchemas.size() - 1 || row.length == columnSchemas.size())) {
+    if (row.length != columnSchemas.size()) {
       return "Row: "
           + rowValue
           + ", No of columns found: "
           + row.length
-          + " and Expected columns: "
-          + columnSchemas.size()
-          + " or "
-          + (columnSchemas.size() - 1);
+          + " and Expected no of columns: "
+          + columnSchemas.size();
     }
 
     StringBuilder resultBuilder = new StringBuilder();
@@ -48,7 +49,7 @@ public class CSVValidator {
         } catch (CSVFieldRuleException e) {
           error = e.getMessage();
         }
-        if (error != null && !error.isEmpty()) {
+        if (StringUtils.isNotNullOrEmpty(error)) {
           resultBuilder.append(error).append("; ");
         }
       }

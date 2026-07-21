@@ -42,9 +42,9 @@ public class DatetimeUtils {
   public static LocalDateTime convertStringToLocalDateTime(
       @NonNull String datetime, @NonNull String datetimeFormat) {
     try {
-      DateTimeFormatter format = DateTimeFormatter.ofPattern(datetimeFormat);
-      return format.parse(datetime, LocalDateTime::from);
-    } catch (DateTimeParseException e) {
+      DateTimeFormatter formatter = DateTimeFormatter.ofPattern(datetimeFormat);
+      return LocalDateTime.parse(datetime, formatter);
+    } catch (Exception e) {
       logger.error(LogConstant.UNABLE_TO_CONVERT_STRING_TO_DATE_FORMAT, e);
       return null;
     }
@@ -52,11 +52,11 @@ public class DatetimeUtils {
 
   public static boolean validateDatetimeWithFormat(
       @NonNull String datetime, @NonNull String datetimeFormat) {
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern(datetimeFormat);
     try {
+      DateTimeFormatter formatter = DateTimeFormatter.ofPattern(datetimeFormat);
       LocalDate.parse(datetime, formatter);
       logger.debug(LogConstant.VALID_DATE_FORMAT_FOUND, LogConstantFields.DATE, datetime);
-    } catch (DateTimeParseException e) {
+    } catch (Exception e) {
       logger.error(LogConstant.INVALID_DATE_ERROR, e);
       return false;
     }
@@ -66,14 +66,22 @@ public class DatetimeUtils {
 
   public static long daysBetweenDateTimes(
       @NonNull LocalDateTime firstDatetime, @NonNull LocalDateTime secondDatetime) {
+    if (firstDatetime.isAfter(secondDatetime))
+      throw new IllegalArgumentException("First datetime should be before second datetime");
     return ChronoUnit.DAYS.between(
         firstDatetime.toInstant(ZoneOffset.UTC), secondDatetime.toInstant(ZoneOffset.UTC));
+  }
+
+  public static @NonNull LocalDateTime addDaysToDatetime(
+      @NonNull LocalDateTime datetime, long days) {
+    if (days < 0) throw new IllegalArgumentException("Days should be positive");
+    return datetime.plusDays(days);
   }
 
   public static @NonNull String addDaysToDatetime(
       @NonNull String datetime, long days, @NonNull String format) {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
-    return LocalDateTime.parse(datetime).plusDays(days).format(formatter);
+    return addDaysToDatetime(LocalDateTime.parse(datetime), days).format(formatter);
   }
 
   public static int compareDatetimeRange(
@@ -102,8 +110,7 @@ public class DatetimeUtils {
     return now.get(WeekFields.ISO.weekOfMonth());
   }
 
-  public static @NonNull Map<String, Object> getWeekNumberOfYearForGivenDate(
-      @NonNull LocalDate date) {
+  public static @NonNull Map<String, Object> getWeekNumberOfYear(@NonNull LocalDate date) {
     Map<String, Object> data = new HashMap<>();
 
     LocalDate currentDate = LocalDate.now();
@@ -127,14 +134,21 @@ public class DatetimeUtils {
     return data;
   }
 
-  public static int getWeekNumOfMonthForGivenDate(@NonNull LocalDate date) {
+  public static int getWeekNumberOfMonth(@NonNull LocalDate date) {
     return date.get(WeekFields.ISO.weekOfMonth());
   }
 
   public static @NonNull Pair<String, String> getDateRangeForGivenWeekNumberOfYear(
-      @NonNull Integer yearWeekNumber, @NonNull Integer year, @NonNull String format) {
+      int yearWeekNumber, int year, @NonNull String format) {
+    if (yearWeekNumber < 1 || yearWeekNumber > 53) {
+      throw new IllegalArgumentException("Invalid year week number");
+    }
+    if (year < 1970 || year > 2100) {
+      throw new IllegalArgumentException("Invalid year");
+    }
+
     LocalDate firstDayOfWeek =
-        LocalDate.of(year, Month.JANUARY, 1)
+        LocalDate.of(year, Month.JUNE, 1)
             .with(WeekFields.ISO.weekOfWeekBasedYear(), yearWeekNumber)
             .with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
     LocalDate lastDayOfWeek = firstDayOfWeek.plusDays(6);
@@ -146,7 +160,7 @@ public class DatetimeUtils {
   }
 
   public static @NonNull Pair<String, String> getDateRangeForGivenWeekNumberOfYear(
-      @NonNull Integer yearWeekNumber, @NonNull String format) {
+      int yearWeekNumber, @NonNull String format) {
     return getDateRangeForGivenWeekNumberOfYear(yearWeekNumber, LocalDate.now().getYear(), format);
   }
 

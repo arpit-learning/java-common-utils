@@ -12,11 +12,11 @@ public class MathUtils {
     return Math.round(value);
   }
 
-  public static boolean checkFloatContainsDecimal(Float value) {
-    return value != null && value % 1 != 0;
+  public static boolean checkFloatContainsDecimal(float value) {
+    return value % 1 != 0;
   }
 
-  public static boolean returnRandom(int totalRange, int rangeBoundary) {
+  public static boolean shouldReturnRandom(int totalRange, int rangeBoundary) {
     int r = SECURE_RANDOM.nextInt(10_000_000);
     int m = r % totalRange;
     return m < rangeBoundary;
@@ -32,11 +32,11 @@ public class MathUtils {
 
   public static int clamp(int value, int min, int max) {
     if (min > max) throw new IllegalArgumentException("min cannot be greater than max");
-    return Math.max(min, Math.min(max, value));
+    return Math.clamp(value, min, max);
   }
 
   public static double clamp(double value, double min, double max) {
     if (min > max) throw new IllegalArgumentException("min cannot be greater than max");
-    return Math.max(min, Math.min(max, value));
+    return Math.clamp(value, min, max);
   }
 }

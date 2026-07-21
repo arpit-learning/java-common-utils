@@ -16,8 +16,7 @@ public class ReportDateUtils {
 
   public static @NonNull Map<String, Pair<String, String>> getDateRangeForLastSixWeeks(
       @NonNull LocalDate date, @NonNull String format) {
-    int currentWeekNumber =
-        (Integer) DatetimeUtils.getWeekNumberOfYearForGivenDate(date).get("weekNumber");
+    int currentWeekNumber = (Integer) DatetimeUtils.getWeekNumberOfYear(date).get("weekNumber");
     Pair<String, String> dateRange =
         DatetimeUtils.getDateRangeForGivenWeekNumberOfYear(
             currentWeekNumber, LocalDate.now().getYear(), format);
@@ -43,8 +42,7 @@ public class ReportDateUtils {
       String to = localDate.format(formatter);
       localDate = localDate.minusDays(6);
       String from = localDate.format(formatter);
-      int WeekNumber =
-          (Integer) DatetimeUtils.getWeekNumberOfYearForGivenDate(localDate).get("weekNumber");
+      int WeekNumber = (Integer) DatetimeUtils.getWeekNumberOfYear(localDate).get("weekNumber");
       results.put(String.valueOf(WeekNumber), new Pair<>(from, to));
     }
 
@@ -89,8 +87,7 @@ public class ReportDateUtils {
 
   public static @NonNull Pair<String, String> getFromAndToDateForLastSevenWeeks(
       @NonNull LocalDate date, @NonNull String format) {
-    int currentWeekNumber =
-        (Integer) DatetimeUtils.getWeekNumberOfYearForGivenDate(date).get("weekNumber");
+    int currentWeekNumber = (Integer) DatetimeUtils.getWeekNumberOfYear(date).get("weekNumber");
     Pair<String, String> dateRange =
         DatetimeUtils.getDateRangeForGivenWeekNumberOfYear(
             currentWeekNumber, LocalDate.now().getYear(), format);
@@ -112,17 +109,17 @@ public class ReportDateUtils {
       @NonNull LocalDate date, @NonNull String format) {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
     String to = date.format(formatter);
-    String from = date.minusDays(-29).format(formatter);
+    String from = date.minusDays(29).format(formatter);
     return new Pair<>(from, to);
   }
 
-  private static String getYearAndMonth(LocalDate date) {
+  private static @NonNull String getYearAndMonth(@NonNull LocalDate date) {
     int year = date.getYear();
     String month = getMonthFromLocalDate(date);
     return year + month;
   }
 
-  private static String getMonthFromLocalDate(LocalDate date) {
+  private static @NonNull String getMonthFromLocalDate(@NonNull LocalDate date) {
     int month = date.getMonthValue();
     if (month < 10) {
       return "0" + month;

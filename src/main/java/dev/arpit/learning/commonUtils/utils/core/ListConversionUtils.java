@@ -41,11 +41,6 @@ public class ListConversionUtils {
       return listStr;
     }
 
-    if (jsonNode == null) {
-      logger.error(LogConstant.UNABLE_TO_PROCESS_STRING);
-      return listStr;
-    }
-
     listStr = mapper.convertValue(jsonNode, new TypeReference<>() {});
     return listStr;
   }
@@ -67,7 +62,7 @@ public class ListConversionUtils {
   public static int getNonEmptyStringsCount(@NonNull String[] inputArr) {
     int count = 0;
     for (String s : inputArr) {
-      if (org.springframework.util.StringUtils.hasText(s)) {
+      if (StringUtils.isNotNullOrEmpty(s)) {
         count++;
       }
     }

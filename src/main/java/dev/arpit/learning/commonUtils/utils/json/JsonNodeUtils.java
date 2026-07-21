@@ -29,7 +29,7 @@ public class JsonNodeUtils {
         new IJsonNodeFloatConverter() {
           @Override
           public boolean supports(JsonNode node) {
-            return node.isFloatingPointNumber() || node.isFloat();
+            return node.isFloatingPointNumber();
           }
 
           @Override

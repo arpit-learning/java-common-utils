@@ -18,7 +18,7 @@ public class StringUtils {
     return !isNullOrEmpty(str);
   }
 
-  public static String defaultIfNullOrEmpty(String str, String defaultStr) {
+  public static @NonNull String defaultIfNullOrEmpty(String str, @NonNull String defaultStr) {
     return isNullOrEmpty(str) ? defaultStr : str;
   }
 
@@ -28,7 +28,7 @@ public class StringUtils {
    * @param template - Template string containing placeholders.
    * @return - The number of placeholders in the template.
    */
-  private static int countPlaceholders(@NonNull String template) {
+  public static int countPlaceholders(@NonNull String template) {
     int count = 0;
     int index = 0;
     while ((index = template.indexOf("#", index)) != -1) {
@@ -45,7 +45,7 @@ public class StringUtils {
    * @param values - Values to replace placeholders with.
    * @return - The template string with placeholders replaced by the corresponding values.
    */
-  public static String getString(@NonNull String template, Object @NonNull ... values) {
+  public static @NonNull String getString(@NonNull String template, Object @NonNull ... values) {
     int placeholderCount = countPlaceholders(template);
 
     if (placeholderCount != values.length) {
@@ -63,13 +63,13 @@ public class StringUtils {
     return result;
   }
 
-  public static String decode(String encodedStr, String format)
+  public static @NonNull String decode(@NonNull String encodedStr, @NonNull String format)
       throws UnsupportedEncodingException {
     return URLDecoder.decode(encodedStr, format);
   }
 
   public static <T> @NonNull String join(@NonNull List<T> objects, @NonNull String token) {
-    if (objects.isEmpty() || !isNullOrEmpty(token)) {
+    if (objects.isEmpty()) {
       return "";
     }
 
@@ -90,7 +90,7 @@ public class StringUtils {
       words[i] = word;
     }
 
-    return String.join(" ", words);
+    return join(List.of(words), " ");
   }
 
   public static @NonNull String trimIfNotNull(String checkStr) {
@@ -103,13 +103,11 @@ public class StringUtils {
     return trimmed.split(tokenSeparator);
   }
 
-  public static String substringBefore(String str, String separator) {
-    if (isNullOrEmpty(str) || separator == null) {
-      return str;
-    }
-    if (separator.isEmpty()) {
+  public static @NonNull String substringBefore(@NonNull String str, @NonNull String separator) {
+    if (isNullOrEmpty(str) || isNullOrEmpty(separator)) {
       return "";
     }
+
     int pos = str.indexOf(separator);
     if (pos == -1) {
       return str;
@@ -117,33 +115,30 @@ public class StringUtils {
     return str.substring(0, pos);
   }
 
-  public static String substringAfter(String str, String separator) {
-    if (isNullOrEmpty(str)) {
-      return str;
-    }
-    if (separator == null) {
+  public static @NonNull String substringAfter(@NonNull String str, @NonNull String separator) {
+    if (isNullOrEmpty(str) || isNullOrEmpty(separator)) {
       return "";
     }
+
     int pos = str.indexOf(separator);
     if (pos == -1) {
-      return "";
+      return str;
     }
     return str.substring(pos + separator.length());
   }
 
-  public static boolean containsIgnoreCase(String str, String searchStr) {
-    if (str == null || searchStr == null) {
-      return false;
-    }
+  public static boolean containsIgnoreCase(@NonNull String str, @NonNull String searchStr) {
     int length = searchStr.length();
     if (length == 0) {
       return true;
     }
+
     for (int i = str.length() - length; i >= 0; i--) {
       if (str.regionMatches(true, i, searchStr, 0, length)) {
         return true;
       }
     }
+
     return false;
   }
 
