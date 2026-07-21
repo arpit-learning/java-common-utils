@@ -100,7 +100,7 @@
       "maxPoints": 6,
       "earnedPoints": 6,
       "passed": true,
-      "detail": "~2640 tokens total across all config files"
+      "detail": "~2762 tokens total across all config files"
     },
     {
       "id": "concreteness",
@@ -109,7 +109,7 @@
       "maxPoints": 4,
       "earnedPoints": 3,
       "passed": true,
-      "detail": "56% of lines reference specific files, paths, or code"
+      "detail": "57% of lines reference specific files, paths, or code"
     },
     {
       "id": "no_directory_tree",
@@ -136,7 +136,7 @@
       "maxPoints": 2,
       "earnedPoints": 2,
       "passed": true,
-      "detail": "8 sections, 15 list items"
+      "detail": "8 sections, 16 list items"
     },
     {
       "id": "agents_md_spec",
@@ -155,7 +155,7 @@
       "maxPoints": 12,
       "earnedPoints": 12,
       "passed": true,
-      "detail": "47/69 project entries referenced in config (68%)",
+      "detail": "54/69 project entries referenced in config (78%)",
       "suggestion": "Config doesn't mention: .devin, .gemini, .windsurf"
     },
     {
@@ -165,7 +165,7 @@
       "maxPoints": 8,
       "earnedPoints": 8,
       "passed": true,
-      "detail": "1079 specific references across 1803 lines (60%)"
+      "detail": "1091 specific references across 1805 lines (60%)"
     },
     {
       "id": "references_valid",
@@ -183,7 +183,7 @@
       "maxPoints": 7,
       "earnedPoints": 7,
       "passed": true,
-      "detail": "1 commit since last config update"
+      "detail": "Config is up to date with latest commits"
     },
     {
       "id": "claude_md_freshness",
@@ -192,7 +192,7 @@
       "maxPoints": 4,
       "earnedPoints": 4,
       "passed": true,
-      "detail": "1 commit since last config update"
+      "detail": "Config updated in the latest commit"
     },
     {
       "id": "no_secrets",
@@ -302,5 +302,5 @@
     "github-copilot",
     "antigravity"
   ],
-  "timestamp": "2026-07-21T15:41:21.826Z"
+  "timestamp": "2026-07-21T15:59:05.506Z"
 }
