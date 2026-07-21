@@ -100,7 +100,7 @@
       "maxPoints": 6,
       "earnedPoints": 6,
       "passed": true,
-      "detail": "~2628 tokens total across all config files"
+      "detail": "~2640 tokens total across all config files"
     },
     {
       "id": "concreteness",
@@ -155,7 +155,7 @@
       "maxPoints": 12,
       "earnedPoints": 12,
       "passed": true,
-      "detail": "46/68 project entries referenced in config (68%)",
+      "detail": "47/69 project entries referenced in config (68%)",
       "suggestion": "Config doesn't mention: .devin, .gemini, .windsurf"
     },
     {
@@ -165,7 +165,7 @@
       "maxPoints": 8,
       "earnedPoints": 8,
       "passed": true,
-      "detail": "1077 specific references across 1803 lines (60%)"
+      "detail": "1079 specific references across 1803 lines (60%)"
     },
     {
       "id": "references_valid",
@@ -183,7 +183,7 @@
       "maxPoints": 7,
       "earnedPoints": 7,
       "passed": true,
-      "detail": "1 commit since last config update"
+      "detail": "Config is up to date with latest commits"
     },
     {
       "id": "claude_md_freshness",
@@ -192,7 +192,7 @@
       "maxPoints": 4,
       "earnedPoints": 4,
       "passed": true,
-      "detail": "1 commit since last config update"
+      "detail": "Config updated in the latest commit"
     },
     {
       "id": "no_secrets",
@@ -302,5 +302,5 @@
     "github-copilot",
     "antigravity"
   ],
-  "timestamp": "2026-07-21T13:36:34.847Z"
+  "timestamp": "2026-07-21T14:47:58.274Z"
 }

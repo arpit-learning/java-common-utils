@@ -157,7 +157,8 @@ class StringUtilsTest {
     String template = "Hello #, welcome to #";
 
     // act & assert
-    assertThrows(NullPointerException.class, () -> StringUtils.getString(template, null));
+    assertThrows(
+        NullPointerException.class, () -> StringUtils.getString(template, (Object[]) null));
   }
 
   @Test

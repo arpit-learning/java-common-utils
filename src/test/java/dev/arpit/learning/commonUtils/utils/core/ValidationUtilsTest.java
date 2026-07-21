@@ -321,7 +321,7 @@ class ValidationUtilsTest {
     ResolvableType resolvableType = ResolvableType.forClass(int[].class);
 
     // act
-    boolean result = ValidationUtils.isNullOrEmpty(null);
+    boolean result = ValidationUtils.isNullOrEmpty((Pair<Object, ResolvableType>[]) null);
 
     // assert
     assertTrue(result);
