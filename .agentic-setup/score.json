@@ -1,5 +1,5 @@
 {
-  "score": 87,
+  "score": 96,
   "maxScore": 100,
   "grade": "A",
   "checks": [
@@ -100,7 +100,7 @@
       "maxPoints": 6,
       "earnedPoints": 6,
       "passed": true,
-      "detail": "~2529 tokens total across all config files"
+      "detail": "~2640 tokens total across all config files"
     },
     {
       "id": "concreteness",
@@ -109,7 +109,7 @@
       "maxPoints": 4,
       "earnedPoints": 3,
       "passed": true,
-      "detail": "55% of lines reference specific files, paths, or code"
+      "detail": "56% of lines reference specific files, paths, or code"
     },
     {
       "id": "no_directory_tree",
@@ -136,7 +136,7 @@
       "maxPoints": 2,
       "earnedPoints": 2,
       "passed": true,
-      "detail": "8 sections, 14 list items"
+      "detail": "8 sections, 15 list items"
     },
     {
       "id": "agents_md_spec",
@@ -155,7 +155,7 @@
       "maxPoints": 12,
       "earnedPoints": 12,
       "passed": true,
-      "detail": "44/53 project entries referenced in config (83%)",
+      "detail": "47/69 project entries referenced in config (68%)",
       "suggestion": "Config doesn't mention: .devin, .gemini, .windsurf"
     },
     {
@@ -165,7 +165,7 @@
       "maxPoints": 8,
       "earnedPoints": 8,
       "passed": true,
-      "detail": "1069 specific references across 1801 lines (59%)"
+      "detail": "1079 specific references across 1803 lines (60%)"
     },
     {
       "id": "references_valid",
@@ -181,18 +181,18 @@
       "name": "Config freshness vs code",
       "category": "accuracy",
       "maxPoints": 7,
-      "earnedPoints": 0,
+      "earnedPoints": 7,
       "passed": true,
-      "detail": "Config files not tracked in git"
+      "detail": "1 commit since last config update"
     },
     {
       "id": "claude_md_freshness",
       "name": "Config freshness",
       "category": "freshness",
       "maxPoints": 4,
-      "earnedPoints": 0,
-      "passed": false,
-      "detail": "Config files not tracked in git"
+      "earnedPoints": 4,
+      "passed": true,
+      "detail": "1 commit since last config update"
     },
     {
       "id": "no_secrets",
@@ -219,7 +219,7 @@
       "maxPoints": 2,
       "earnedPoints": 2,
       "passed": true,
-      "detail": "Claude Code: Stop, SessionStart, PostToolUse, PostToolUseFailure, UserPromptSubmit, SessionEnd, git pre-commit, config pre-commit instruction"
+      "detail": "Claude Code: Stop, SessionStart, PostToolUse, PostToolUseFailure, UserPromptSubmit, SessionEnd, Notification, git pre-commit, config pre-commit instruction"
     },
     {
       "id": "learned_content",
@@ -283,11 +283,11 @@
       "max": 20
     },
     "accuracy": {
-      "earned": 8,
+      "earned": 15,
       "max": 15
     },
     "freshness": {
-      "earned": 6,
+      "earned": 10,
       "max": 10
     },
     "bonus": {
@@ -302,5 +302,5 @@
     "github-copilot",
     "antigravity"
   ],
-  "timestamp": "2026-07-17T10:03:54.319Z"
+  "timestamp": "2026-07-21T15:41:21.826Z"
 }

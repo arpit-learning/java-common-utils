@@ -1,10 +1,3014 @@
 {
   "stats": {
-    "files": 11,
-    "symbols": 0,
-    "nodes": 0,
-    "edges": 0
+    "files": 31,
+    "symbols": 152,
+    "nodes": 152,
+    "edges": 114
   },
-  "nodes": {},
-  "edges": []
+  "nodes": {
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/constants/CommonUtilLogConstants.java#L52:getMessage": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/constants/CommonUtilLogConstants.java#L52:getMessage",
+      "name": "getMessage",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/constants/CommonUtilLogConstants.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 51,
+          "column": 2
+        },
+        "end": {
+          "row": 54,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L6:getAll": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L6:getAll",
+      "name": "getAll",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 5,
+          "column": 2
+        },
+        "end": {
+          "row": 5,
+          "column": 19
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L8:getById": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L8:getById",
+      "name": "getById",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 7,
+          "column": 2
+        },
+        "end": {
+          "row": 7,
+          "column": 19
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L10:create": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L10:create",
+      "name": "create",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 9,
+          "column": 2
+        },
+        "end": {
+          "row": 9,
+          "column": 16
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L12:update": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L12:update",
+      "name": "update",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 11,
+          "column": 2
+        },
+        "end": {
+          "row": 11,
+          "column": 13
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L14:delete": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L14:delete",
+      "name": "delete",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 13,
+          "column": 2
+        },
+        "end": {
+          "row": 13,
+          "column": 18
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L8:BeanUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L8:BeanUtils",
+      "name": "BeanUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 7,
+          "column": 0
+        },
+        "end": {
+          "row": 23,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L12:setApplicationContext": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L12:setApplicationContext",
+      "name": "setApplicationContext",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 11,
+          "column": 2
+        },
+        "end": {
+          "row": 14,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L17:setContext": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L17:setContext",
+      "name": "setContext",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 16,
+          "column": 2
+        },
+        "end": {
+          "row": 18,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L21:getBean": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L21:getBean",
+      "name": "getBean",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 20,
+          "column": 2
+        },
+        "end": {
+          "row": 22,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L14:CSVUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L14:CSVUtils",
+      "name": "CSVUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 13,
+          "column": 0
+        },
+        "end": {
+          "row": 116,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "name": "isNotEmptyRow",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 16,
+          "column": 2
+        },
+        "end": {
+          "row": 23,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L26:collectHeadersOrdered": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L26:collectHeadersOrdered",
+      "name": "collectHeadersOrdered",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 25,
+          "column": 2
+        },
+        "end": {
+          "row": 32,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L35:getRowOrdered": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L35:getRowOrdered",
+      "name": "getRowOrdered",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 34,
+          "column": 2
+        },
+        "end": {
+          "row": 44,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L47:getRowsOrdered": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L47:getRowsOrdered",
+      "name": "getRowsOrdered",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 46,
+          "column": 2
+        },
+        "end": {
+          "row": 55,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L58:toRowMap": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L58:toRowMap",
+      "name": "toRowMap",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 57,
+          "column": 2
+        },
+        "end": {
+          "row": 71,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L74:generateCSV": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L74:generateCSV",
+      "name": "generateCSV",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 73,
+          "column": 2
+        },
+        "end": {
+          "row": 106,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L109:generateCSV": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L109:generateCSV",
+      "name": "generateCSV",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 108,
+          "column": 2
+        },
+        "end": {
+          "row": 115,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L9:CSVValidator": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L9:CSVValidator",
+      "name": "CSVValidator",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 8,
+          "column": 0
+        },
+        "end": {
+          "row": 87,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L10:ColumnSchema": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L10:ColumnSchema",
+      "name": "ColumnSchema",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 9,
+          "column": 2
+        },
+        "end": {
+          "row": 15,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "name": "validateCsvRow",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 23,
+          "column": 2
+        },
+        "end": {
+          "row": 75,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L78:validateCsvRows": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L78:validateCsvRows",
+      "name": "validateCsvRows",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 77,
+          "column": 2
+        },
+        "end": {
+          "row": 86,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L22:CommonUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L22:CommonUtils",
+      "name": "CommonUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 21,
+          "column": 0
+        },
+        "end": {
+          "row": 303,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L26:generateUUIDV4": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L26:generateUUIDV4",
+      "name": "generateUUIDV4",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 25,
+          "column": 2
+        },
+        "end": {
+          "row": 27,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L30:generateUUIDV7": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L30:generateUUIDV7",
+      "name": "generateUUIDV7",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 29,
+          "column": 2
+        },
+        "end": {
+          "row": 31,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "name": "isEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 33,
+          "column": 2
+        },
+        "end": {
+          "row": 35,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty",
+      "name": "isEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 37,
+          "column": 2
+        },
+        "end": {
+          "row": 39,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "name": "isEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 41,
+          "column": 2
+        },
+        "end": {
+          "row": 43,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty",
+      "name": "isEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 45,
+          "column": 2
+        },
+        "end": {
+          "row": 47,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "name": "isEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 49,
+          "column": 2
+        },
+        "end": {
+          "row": 61,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L64:isNotEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L64:isNotEmpty",
+      "name": "isNotEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 63,
+          "column": 2
+        },
+        "end": {
+          "row": 65,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L68:isNotEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L68:isNotEmpty",
+      "name": "isNotEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 67,
+          "column": 2
+        },
+        "end": {
+          "row": 69,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L72:isNotEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L72:isNotEmpty",
+      "name": "isNotEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 71,
+          "column": 2
+        },
+        "end": {
+          "row": 73,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L76:isNotEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L76:isNotEmpty",
+      "name": "isNotEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 75,
+          "column": 2
+        },
+        "end": {
+          "row": 77,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L80:getFileExtension": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L80:getFileExtension",
+      "name": "getFileExtension",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 79,
+          "column": 2
+        },
+        "end": {
+          "row": 88,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L91:checkStringStartsWithRegexPattern": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L91:checkStringStartsWithRegexPattern",
+      "name": "checkStringStartsWithRegexPattern",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 90,
+          "column": 2
+        },
+        "end": {
+          "row": 96,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L99:checkStringMatchesWithRegexPattern": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L99:checkStringMatchesWithRegexPattern",
+      "name": "checkStringMatchesWithRegexPattern",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 98,
+          "column": 2
+        },
+        "end": {
+          "row": 103,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L106:hasJsonKeyAndValueIsNotNullAndIsTextual": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L106:hasJsonKeyAndValueIsNotNullAndIsTextual",
+      "name": "hasJsonKeyAndValueIsNotNullAndIsTextual",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 105,
+          "column": 2
+        },
+        "end": {
+          "row": 108,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L111:hasJsonKeyAndValueIsNull": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L111:hasJsonKeyAndValueIsNull",
+      "name": "hasJsonKeyAndValueIsNull",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 110,
+          "column": 2
+        },
+        "end": {
+          "row": 113,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L116:getTodayWithZeroTime": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L116:getTodayWithZeroTime",
+      "name": "getTodayWithZeroTime",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 115,
+          "column": 2
+        },
+        "end": {
+          "row": 118,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L121:removeNullEntries": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L121:removeNullEntries",
+      "name": "removeNullEntries",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 120,
+          "column": 2
+        },
+        "end": {
+          "row": 123,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L126:getNonEmptyStringsCount": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L126:getNonEmptyStringsCount",
+      "name": "getNonEmptyStringsCount",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 125,
+          "column": 2
+        },
+        "end": {
+          "row": 134,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L137:getNonEmptyStrings": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L137:getNonEmptyStrings",
+      "name": "getNonEmptyStrings",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 136,
+          "column": 2
+        },
+        "end": {
+          "row": 144,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L147:getTokenSeparatedString": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L147:getTokenSeparatedString",
+      "name": "getTokenSeparatedString",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 146,
+          "column": 2
+        },
+        "end": {
+          "row": 159,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L162:roundOff": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L162:roundOff",
+      "name": "roundOff",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 161,
+          "column": 2
+        },
+        "end": {
+          "row": 163,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L166:capitalizeEachWord": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L166:capitalizeEachWord",
+      "name": "capitalizeEachWord",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 165,
+          "column": 2
+        },
+        "end": {
+          "row": 174,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L177:getComplexDimAttr": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L177:getComplexDimAttr",
+      "name": "getComplexDimAttr",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 176,
+          "column": 2
+        },
+        "end": {
+          "row": 182,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L185:validateDuplicateComplexDimAttr": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L185:validateDuplicateComplexDimAttr",
+      "name": "validateDuplicateComplexDimAttr",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 184,
+          "column": 2
+        },
+        "end": {
+          "row": 192,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "name": "validateComplexDimAttr",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 194,
+          "column": 2
+        },
+        "end": {
+          "row": 260,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L263:putInMap": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L263:putInMap",
+      "name": "putInMap",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 262,
+          "column": 2
+        },
+        "end": {
+          "row": 269,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L272:trimIfNotNull": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L272:trimIfNotNull",
+      "name": "trimIfNotNull",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 271,
+          "column": 2
+        },
+        "end": {
+          "row": 274,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L277:checkFloatContainsDecimal": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L277:checkFloatContainsDecimal",
+      "name": "checkFloatContainsDecimal",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 276,
+          "column": 2
+        },
+        "end": {
+          "row": 282,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L285:splitIfNotNull": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L285:splitIfNotNull",
+      "name": "splitIfNotNull",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 284,
+          "column": 2
+        },
+        "end": {
+          "row": 287,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L290:isValidUrl": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L290:isValidUrl",
+      "name": "isValidUrl",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 289,
+          "column": 2
+        },
+        "end": {
+          "row": 296,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L299:returnRandom": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L299:returnRandom",
+      "name": "returnRandom",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 298,
+          "column": 2
+        },
+        "end": {
+          "row": 302,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L19:DatetimeUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L19:DatetimeUtils",
+      "name": "DatetimeUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 18,
+          "column": 0
+        },
+        "end": {
+          "row": 294,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L22:getCurrentTimestamp": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L22:getCurrentTimestamp",
+      "name": "getCurrentTimestamp",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 21,
+          "column": 2
+        },
+        "end": {
+          "row": 23,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L26:getFormattedTimestamp": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L26:getFormattedTimestamp",
+      "name": "getFormattedTimestamp",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 25,
+          "column": 2
+        },
+        "end": {
+          "row": 28,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L31:getFormattedCurrentTimestamp": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L31:getFormattedCurrentTimestamp",
+      "name": "getFormattedCurrentTimestamp",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 30,
+          "column": 2
+        },
+        "end": {
+          "row": 33,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L36:getFormattedCurrentTimestamp": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L36:getFormattedCurrentTimestamp",
+      "name": "getFormattedCurrentTimestamp",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 35,
+          "column": 2
+        },
+        "end": {
+          "row": 37,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L40:getCurrentTimestampInEpoch": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L40:getCurrentTimestampInEpoch",
+      "name": "getCurrentTimestampInEpoch",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 39,
+          "column": 2
+        },
+        "end": {
+          "row": 41,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L44:convertStringToLocalDateTime": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L44:convertStringToLocalDateTime",
+      "name": "convertStringToLocalDateTime",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 43,
+          "column": 2
+        },
+        "end": {
+          "row": 52,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L55:validateDatetimeWithFormat": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L55:validateDatetimeWithFormat",
+      "name": "validateDatetimeWithFormat",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 54,
+          "column": 2
+        },
+        "end": {
+          "row": 69,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L72:daysBetweenDateTimes": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L72:daysBetweenDateTimes",
+      "name": "daysBetweenDateTimes",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 71,
+          "column": 2
+        },
+        "end": {
+          "row": 75,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L78:addDaysToDatetime": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L78:addDaysToDatetime",
+      "name": "addDaysToDatetime",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 77,
+          "column": 2
+        },
+        "end": {
+          "row": 81,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L84:compareDatetimeRange": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L84:compareDatetimeRange",
+      "name": "compareDatetimeRange",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 83,
+          "column": 2
+        },
+        "end": {
+          "row": 89,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L92:validateDatetimeRange": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L92:validateDatetimeRange",
+      "name": "validateDatetimeRange",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 91,
+          "column": 2
+        },
+        "end": {
+          "row": 97,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L100:getCurrentWeekNumberOfYear": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L100:getCurrentWeekNumberOfYear",
+      "name": "getCurrentWeekNumberOfYear",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 99,
+          "column": 2
+        },
+        "end": {
+          "row": 102,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L105:getCurrentWeekNumberOfMonth": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L105:getCurrentWeekNumberOfMonth",
+      "name": "getCurrentWeekNumberOfMonth",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 104,
+          "column": 2
+        },
+        "end": {
+          "row": 107,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L110:getWeekNumberOfYearForGivenDate": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L110:getWeekNumberOfYearForGivenDate",
+      "name": "getWeekNumberOfYearForGivenDate",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 109,
+          "column": 2
+        },
+        "end": {
+          "row": 132,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L135:getWeekNumOfMonthForGivenDate": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L135:getWeekNumOfMonthForGivenDate",
+      "name": "getWeekNumOfMonthForGivenDate",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 134,
+          "column": 2
+        },
+        "end": {
+          "row": 136,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L139:getDateRangeForGivenWeekNumberOfYear": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L139:getDateRangeForGivenWeekNumberOfYear",
+      "name": "getDateRangeForGivenWeekNumberOfYear",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 138,
+          "column": 2
+        },
+        "end": {
+          "row": 150,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L153:getDateRangeForGivenWeekNumberOfYear": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L153:getDateRangeForGivenWeekNumberOfYear",
+      "name": "getDateRangeForGivenWeekNumberOfYear",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 152,
+          "column": 2
+        },
+        "end": {
+          "row": 155,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L158:getDateRangeFromStartOfYearTillGivenDate": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L158:getDateRangeFromStartOfYearTillGivenDate",
+      "name": "getDateRangeFromStartOfYearTillGivenDate",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 157,
+          "column": 2
+        },
+        "end": {
+          "row": 164,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L167:getDateRangeFromStartOfMonthTillGivenDate": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L167:getDateRangeFromStartOfMonthTillGivenDate",
+      "name": "getDateRangeFromStartOfMonthTillGivenDate",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 166,
+          "column": 2
+        },
+        "end": {
+          "row": 173,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L176:getDateRangeFromStartOfWeekTillGivenDate": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L176:getDateRangeFromStartOfWeekTillGivenDate",
+      "name": "getDateRangeFromStartOfWeekTillGivenDate",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 175,
+          "column": 2
+        },
+        "end": {
+          "row": 182,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L185:getDateRangeForLastSixWeeks": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L185:getDateRangeForLastSixWeeks",
+      "name": "getDateRangeForLastSixWeeks",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 184,
+          "column": 2
+        },
+        "end": {
+          "row": 216,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L219:getDateRangeForLastSixMonths": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L219:getDateRangeForLastSixMonths",
+      "name": "getDateRangeForLastSixMonths",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 218,
+          "column": 2
+        },
+        "end": {
+          "row": 235,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L238:getFromAndToDateForLastSevenMonths": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L238:getFromAndToDateForLastSevenMonths",
+      "name": "getFromAndToDateForLastSevenMonths",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 237,
+          "column": 2
+        },
+        "end": {
+          "row": 244,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L247:getFromAndToDateForLastSevenDays": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L247:getFromAndToDateForLastSevenDays",
+      "name": "getFromAndToDateForLastSevenDays",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 246,
+          "column": 2
+        },
+        "end": {
+          "row": 252,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L255:getFromAndToDateForLastSevenWeeks": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L255:getFromAndToDateForLastSevenWeeks",
+      "name": "getFromAndToDateForLastSevenWeeks",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 254,
+          "column": 2
+        },
+        "end": {
+          "row": 264,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L267:getUptoDateMonthRange": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L267:getUptoDateMonthRange",
+      "name": "getUptoDateMonthRange",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 266,
+          "column": 2
+        },
+        "end": {
+          "row": 271,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L274:getFromAndToDateForLast30Days": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L274:getFromAndToDateForLast30Days",
+      "name": "getFromAndToDateForLast30Days",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 273,
+          "column": 2
+        },
+        "end": {
+          "row": 279,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L282:getYearAndMonth": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L282:getYearAndMonth",
+      "name": "getYearAndMonth",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 281,
+          "column": 2
+        },
+        "end": {
+          "row": 285,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L288:getMonthFromLocalDate": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L288:getMonthFromLocalDate",
+      "name": "getMonthFromLocalDate",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 287,
+          "column": 2
+        },
+        "end": {
+          "row": 293,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L12:FileUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L12:FileUtils",
+      "name": "FileUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 11,
+          "column": 0
+        },
+        "end": {
+          "row": 49,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L15:getFileNameExcludingExtension": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L15:getFileNameExcludingExtension",
+      "name": "getFileNameExcludingExtension",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 14,
+          "column": 2
+        },
+        "end": {
+          "row": 16,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L19:createDirectoryIfNotExist": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L19:createDirectoryIfNotExist",
+      "name": "createDirectoryIfNotExist",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 18,
+          "column": 2
+        },
+        "end": {
+          "row": 25,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L28:generateFilenameWithPrefix": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L28:generateFilenameWithPrefix",
+      "name": "generateFilenameWithPrefix",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 27,
+          "column": 2
+        },
+        "end": {
+          "row": 30,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L33:isFileValid": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L33:isFileValid",
+      "name": "isFileValid",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 32,
+          "column": 2
+        },
+        "end": {
+          "row": 48,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java#L12:HmacUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java#L12:HmacUtils",
+      "name": "HmacUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 11,
+          "column": 0
+        },
+        "end": {
+          "row": 40,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java#L13:getHmac": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java#L13:getHmac",
+      "name": "getHmac",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 12,
+          "column": 2
+        },
+        "end": {
+          "row": 22,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java#L25:getChecksum": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java#L25:getChecksum",
+      "name": "getChecksum",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/HmacUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 24,
+          "column": 2
+        },
+        "end": {
+          "row": 39,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L12:ImageUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L12:ImageUtils",
+      "name": "ImageUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 11,
+          "column": 0
+        },
+        "end": {
+          "row": 23,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L13:downloadImage": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L13:downloadImage",
+      "name": "downloadImage",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 12,
+          "column": 2
+        },
+        "end": {
+          "row": 15,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L18:getImageBytes": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L18:getImageBytes",
+      "name": "getImageBytes",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 17,
+          "column": 2
+        },
+        "end": {
+          "row": 22,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java#L6:JsonPathUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java#L6:JsonPathUtils",
+      "name": "JsonPathUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 5,
+          "column": 0
+        },
+        "end": {
+          "row": 9,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java#L7:read": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java#L7:read",
+      "name": "read",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 6,
+          "column": 2
+        },
+        "end": {
+          "row": 8,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L20:JsonUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L20:JsonUtils",
+      "name": "JsonUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 19,
+          "column": 0
+        },
+        "end": {
+          "row": 195,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L24:toJsonString": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L24:toJsonString",
+      "name": "toJsonString",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 23,
+          "column": 2
+        },
+        "end": {
+          "row": 33,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L36:toJsonString": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L36:toJsonString",
+      "name": "toJsonString",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 35,
+          "column": 2
+        },
+        "end": {
+          "row": 38,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L41:getFromJson": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L41:getFromJson",
+      "name": "getFromJson",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 40,
+          "column": 2
+        },
+        "end": {
+          "row": 50,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L53:getFromJsonWithException": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L53:getFromJsonWithException",
+      "name": "getFromJsonWithException",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 52,
+          "column": 2
+        },
+        "end": {
+          "row": 63,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L66:getFromJsonNode": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L66:getFromJsonNode",
+      "name": "getFromJsonNode",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 65,
+          "column": 2
+        },
+        "end": {
+          "row": 75,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L78:toJsonString": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L78:toJsonString",
+      "name": "toJsonString",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 77,
+          "column": 2
+        },
+        "end": {
+          "row": 99,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L102:merge": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L102:merge",
+      "name": "merge",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 101,
+          "column": 2
+        },
+        "end": {
+          "row": 135,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L138:getFloat": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L138:getFloat",
+      "name": "getFloat",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 137,
+          "column": 2
+        },
+        "end": {
+          "row": 147,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L150:isValidFloatNode": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L150:isValidFloatNode",
+      "name": "isValidFloatNode",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 149,
+          "column": 2
+        },
+        "end": {
+          "row": 151,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L154:getTextValue": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L154:getTextValue",
+      "name": "getTextValue",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 153,
+          "column": 2
+        },
+        "end": {
+          "row": 155,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L158:hasJsonKeyAndNotNull": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L158:hasJsonKeyAndNotNull",
+      "name": "hasJsonKeyAndNotNull",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 157,
+          "column": 2
+        },
+        "end": {
+          "row": 159,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L162:isTextNode": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L162:isTextNode",
+      "name": "isTextNode",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 161,
+          "column": 2
+        },
+        "end": {
+          "row": 163,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L166:isNotTextNode": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L166:isNotTextNode",
+      "name": "isNotTextNode",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 165,
+          "column": 2
+        },
+        "end": {
+          "row": 167,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L170:convertObjectValueToClass": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L170:convertObjectValueToClass",
+      "name": "convertObjectValueToClass",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 169,
+          "column": 2
+        },
+        "end": {
+          "row": 172,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L175:convertObjectValueToType": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L175:convertObjectValueToType",
+      "name": "convertObjectValueToType",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 174,
+          "column": 2
+        },
+        "end": {
+          "row": 177,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L180:toJsonNode": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L180:toJsonNode",
+      "name": "toJsonNode",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 179,
+          "column": 2
+        },
+        "end": {
+          "row": 181,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L184:toJsonObject": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L184:toJsonObject",
+      "name": "toJsonObject",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 183,
+          "column": 2
+        },
+        "end": {
+          "row": 185,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L188:toArrayNode": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L188:toArrayNode",
+      "name": "toArrayNode",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 187,
+          "column": 2
+        },
+        "end": {
+          "row": 189,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L192:readValueToType": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L192:readValueToType",
+      "name": "readValueToType",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 191,
+          "column": 2
+        },
+        "end": {
+          "row": 194,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java#L16:ListConversionUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java#L16:ListConversionUtils",
+      "name": "ListConversionUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 15,
+          "column": 0
+        },
+        "end": {
+          "row": 49,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java#L20:listToArray": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java#L20:listToArray",
+      "name": "listToArray",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 19,
+          "column": 2
+        },
+        "end": {
+          "row": 21,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java#L24:stringToList": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java#L24:stringToList",
+      "name": "stringToList",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ListConversionUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 23,
+          "column": 2
+        },
+        "end": {
+          "row": 48,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L10:MaskingUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L10:MaskingUtils",
+      "name": "MaskingUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 9,
+          "column": 0
+        },
+        "end": {
+          "row": 65,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L13:getMaskedName": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L13:getMaskedName",
+      "name": "getMaskedName",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 12,
+          "column": 2
+        },
+        "end": {
+          "row": 33,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L36:getMaskedEmail": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L36:getMaskedEmail",
+      "name": "getMaskedEmail",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 35,
+          "column": 2
+        },
+        "end": {
+          "row": 51,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L54:getMaskedMobileNumber": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java#L54:getMaskedMobileNumber",
+      "name": "getMaskedMobileNumber",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/MaskingUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 53,
+          "column": 2
+        },
+        "end": {
+          "row": 64,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L12:NullEmptyValidationsUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L12:NullEmptyValidationsUtils",
+      "name": "NullEmptyValidationsUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 11,
+          "column": 0
+        },
+        "end": {
+          "row": 85,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L15:checkParametersAsNullEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L15:checkParametersAsNullEmpty",
+      "name": "checkParametersAsNullEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 14,
+          "column": 2
+        },
+        "end": {
+          "row": 27,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L30:isParametersAsNullEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L30:isParametersAsNullEmpty",
+      "name": "isParametersAsNullEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 29,
+          "column": 2
+        },
+        "end": {
+          "row": 44,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "name": "isNullOrEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 46,
+          "column": 2
+        },
+        "end": {
+          "row": 80,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L83:isArrayNullOrEmpty": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L83:isArrayNullOrEmpty",
+      "name": "isArrayNullOrEmpty",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 82,
+          "column": 2
+        },
+        "end": {
+          "row": 84,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L8:RegexUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L8:RegexUtils",
+      "name": "RegexUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 7,
+          "column": 0
+        },
+        "end": {
+          "row": 20,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L11:getPattern": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L11:getPattern",
+      "name": "getPattern",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 10,
+          "column": 2
+        },
+        "end": {
+          "row": 15,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L18:match": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L18:match",
+      "name": "match",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 17,
+          "column": 2
+        },
+        "end": {
+          "row": 19,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L24:RestTemplateUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L24:RestTemplateUtils",
+      "name": "RestTemplateUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 23,
+          "column": 0
+        },
+        "end": {
+          "row": 260,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L34:setCustomRequestTimeout": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L34:setCustomRequestTimeout",
+      "name": "setCustomRequestTimeout",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 33,
+          "column": 2
+        },
+        "end": {
+          "row": 39,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri",
+      "name": "buildUri",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 41,
+          "column": 2
+        },
+        "end": {
+          "row": 56,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L59:getRequestHeaders": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L59:getRequestHeaders",
+      "name": "getRequestHeaders",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 58,
+          "column": 2
+        },
+        "end": {
+          "row": 65,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L68:getRequestEntity": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L68:getRequestEntity",
+      "name": "getRequestEntity",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 67,
+          "column": 2
+        },
+        "end": {
+          "row": 74,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "name": "makeHTTPRequest",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 76,
+          "column": 2
+        },
+        "end": {
+          "row": 116,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L119:makeHTTPRequest": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L119:makeHTTPRequest",
+      "name": "makeHTTPRequest",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 118,
+          "column": 2
+        },
+        "end": {
+          "row": 124,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L127:makeHttpRequest": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L127:makeHttpRequest",
+      "name": "makeHttpRequest",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 126,
+          "column": 2
+        },
+        "end": {
+          "row": 143,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L146:makeHttpRequest": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L146:makeHttpRequest",
+      "name": "makeHttpRequest",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 145,
+          "column": 2
+        },
+        "end": {
+          "row": 160,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L163:getCSVAsStreamRequestEntity": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L163:getCSVAsStreamRequestEntity",
+      "name": "getCSVAsStreamRequestEntity",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 162,
+          "column": 2
+        },
+        "end": {
+          "row": 179,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L172:getFilename": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L172:getFilename",
+      "name": "getFilename",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 171,
+          "column": 10
+        },
+        "end": {
+          "row": 174,
+          "column": 11
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L182:makeHttpRequestWithCSVAsStream": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L182:makeHttpRequestWithCSVAsStream",
+      "name": "makeHttpRequestWithCSVAsStream",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 181,
+          "column": 2
+        },
+        "end": {
+          "row": 191,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L194:makeHTTPRequestWithCSVAsStream": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L194:makeHTTPRequestWithCSVAsStream",
+      "name": "makeHTTPRequestWithCSVAsStream",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 193,
+          "column": 2
+        },
+        "end": {
+          "row": 210,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L213:makeHTTPRequestAndSaveFile": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L213:makeHTTPRequestAndSaveFile",
+      "name": "makeHTTPRequestAndSaveFile",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 212,
+          "column": 2
+        },
+        "end": {
+          "row": 259,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L7:StringUtils": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L7:StringUtils",
+      "name": "StringUtils",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java",
+      "type": "class",
+      "range": {
+        "start": {
+          "row": 6,
+          "column": 0
+        },
+        "end": {
+          "row": 60,
+          "column": 1
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L8:isStringEmptyOrNull": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L8:isStringEmptyOrNull",
+      "name": "isStringEmptyOrNull",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 7,
+          "column": 2
+        },
+        "end": {
+          "row": 13,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L22:countPlaceholders": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L22:countPlaceholders",
+      "name": "countPlaceholders",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 21,
+          "column": 2
+        },
+        "end": {
+          "row": 29,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L39:getString": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L39:getString",
+      "name": "getString",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 38,
+          "column": 2
+        },
+        "end": {
+          "row": 54,
+          "column": 3
+        }
+      }
+    },
+    "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L57:decode": {
+      "id": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L57:decode",
+      "name": "decode",
+      "file": "/Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java",
+      "type": "method",
+      "range": {
+        "start": {
+          "row": 56,
+          "column": 2
+        },
+        "end": {
+          "row": 59,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L12:setApplicationContext",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L17:setContext",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L21:getBean",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/BeanUtils.java#L21:getBean",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L47:getRowsOrdered",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L35:getRowOrdered",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L74:generateCSV",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L74:generateCSV",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L17:isNotEmptyRow",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L74:generateCSV",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L58:toRowMap",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L109:generateCSV",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L26:collectHeadersOrdered",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L109:generateCSV",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L47:getRowsOrdered",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L109:generateCSV",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVUtils.java#L74:generateCSV",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L14:delete",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L78:validateCsvRows",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CSVValidator.java#L24:validateCsvRow",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L64:isNotEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L68:isNotEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L72:isNotEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L76:isNotEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L80:getFileExtension",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L10:create",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L126:getNonEmptyStringsCount",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L64:isNotEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L137:getNonEmptyStrings",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L64:isNotEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L147:getTokenSeparatedString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L147:getTokenSeparatedString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L147:getTokenSeparatedString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L14:delete",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L185:validateDuplicateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L24:toJsonString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L185:validateDuplicateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L36:toJsonString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L185:validateDuplicateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L78:toJsonString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L177:getComplexDimAttr",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L121:removeNullEntries",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L185:validateDuplicateComplexDimAttr",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L195:validateComplexDimAttr",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L147:getTokenSeparatedString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L285:splitIfNotNull",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L272:trimIfNotNull",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L290:isValidUrl",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L10:create",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L31:getFormattedCurrentTimestamp",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L26:getFormattedTimestamp",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L31:getFormattedCurrentTimestamp",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L22:getCurrentTimestamp",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L31:getFormattedCurrentTimestamp",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/constants/CommonUtilLogConstants.java#L52:getMessage",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L36:getFormattedCurrentTimestamp",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L26:getFormattedTimestamp",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L36:getFormattedCurrentTimestamp",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L22:getCurrentTimestamp",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L110:getWeekNumberOfYearForGivenDate",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L139:getDateRangeForGivenWeekNumberOfYear",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L153:getDateRangeForGivenWeekNumberOfYear",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L139:getDateRangeForGivenWeekNumberOfYear",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L185:getDateRangeForLastSixWeeks",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L110:getWeekNumberOfYearForGivenDate",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L185:getDateRangeForLastSixWeeks",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L139:getDateRangeForGivenWeekNumberOfYear",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L185:getDateRangeForLastSixWeeks",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L110:getWeekNumberOfYearForGivenDate",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L219:getDateRangeForLastSixMonths",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L282:getYearAndMonth",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L255:getFromAndToDateForLastSevenWeeks",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L110:getWeekNumberOfYearForGivenDate",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L255:getFromAndToDateForLastSevenWeeks",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L139:getDateRangeForGivenWeekNumberOfYear",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L282:getYearAndMonth",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/DatetimeUtils.java#L288:getMonthFromLocalDate",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L15:getFileNameExcludingExtension",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L172:getFilename",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L33:isFileValid",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L33:isFileValid",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L33:isFileValid",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L33:isFileValid",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/FileUtils.java#L33:isFileValid",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L13:downloadImage",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/services/ICRUDService.java#L10:create",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/ImageUtils.java#L13:downloadImage",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java#L7:read",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java#L7:read",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonPathUtils.java#L7:read",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L36:toJsonString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L24:toJsonString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L78:toJsonString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L41:getFromJson",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L78:toJsonString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L24:toJsonString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L78:toJsonString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L41:getFromJson",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L78:toJsonString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L24:toJsonString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L102:merge",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L102:merge",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L102:merge",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L102:merge",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L166:isNotTextNode",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/JsonUtils.java#L162:isTextNode",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L34:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L38:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L42:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L46:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/NullEmptyValidationsUtils.java#L47:isNullOrEmpty",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/CommonUtils.java#L50:isEmpty",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L18:match",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RegexUtils.java#L11:getPattern",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L39:getString",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L68:getRequestEntity",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L59:getRequestHeaders",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L34:setCustomRequestTimeout",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L119:makeHTTPRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L127:makeHttpRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L127:makeHttpRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L127:makeHttpRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L68:getRequestEntity",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L146:makeHttpRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L146:makeHttpRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L146:makeHttpRequest",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L68:getRequestEntity",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L182:makeHttpRequestWithCSVAsStream",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L163:getCSVAsStreamRequestEntity",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L182:makeHttpRequestWithCSVAsStream",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L182:makeHttpRequestWithCSVAsStream",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L194:makeHTTPRequestWithCSVAsStream",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L163:getCSVAsStreamRequestEntity",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L194:makeHTTPRequestWithCSVAsStream",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L194:makeHTTPRequestWithCSVAsStream",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L213:makeHTTPRequestAndSaveFile",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L68:getRequestEntity",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L213:makeHTTPRequestAndSaveFile",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L77:makeHTTPRequest",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L213:makeHTTPRequestAndSaveFile",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/RestTemplateUtils.java#L42:buildUri",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L39:getString",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L22:countPlaceholders",
+      "type": "CALLS"
+    },
+    {
+      "from": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L57:decode",
+      "to": "file:///Users/arpit.malik/Documents/per/java-common-utils/src/main/java/dev/arpit/learning/commonUtils/utils/StringUtils.java#L57:decode",
+      "type": "CALLS"
+    }
+  ]
 }
