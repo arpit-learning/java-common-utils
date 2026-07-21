@@ -36,6 +36,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - name: Require GH_TOKEN
