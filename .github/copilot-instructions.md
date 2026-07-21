@@ -21,11 +21,12 @@ Clean build:
 
 ## Architecture & Component Mapping
 
-- **Build**: `build.gradle` · `settings.gradle` · `gradle.properties`
-- **Wrapper**: `gradlew` · `gradlew.bat` · `gradle/wrapper/gradle-wrapper.properties` · `gradle/wrapper/gradle-wrapper.jar`
-- **Hooks**: `.cursor/hooks.json` · `.claude/hooks/agentic-session-freshness.sh` · `.claude/hooks/agentic-check-sync.sh` · `.claude/hooks/agentic-freshness-notify.sh`
-- **IDE**: `.idea/gradle.xml` · `.idea/misc.xml` · `.idea/awsToolkit.xml` · `.idea/vcs.xml` · `.idea/AndroidProjectSystem.xml` · `.idea/develocity.xml`
-- **Agentic Setup**: `.agentic-setup.yaml` · `.agentic-setup/score.json` · `.agentic-setup/score-history.jsonl`
+- **Build**: `build.gradle` · `settings.gradle` · `gradle.properties` 
+- **Wrapper**: `gradlew` · `gradlew.bat` · `gradle/wrapper/gradle-wrapper.properties` · `gradle/wrapper/gradle-wrapper.jar` 
+- **Hooks**: `.cursor/hooks.json` · `.claude/hooks/agentic-session-freshness.sh` · `.claude/hooks/agentic-check-sync.sh` · `.claude/hooks/agentic-freshness-notify.sh` 
+- **IDE**: `.idea/gradle.xml` · `.idea/misc.xml` · `.idea/awsToolkit.xml` · `.idea/vcs.xml` · `.idea/AndroidProjectSystem.xml` · `.idea/develocity.xml` 
+- **Agentic Setup**: `.agentic-setup.yaml` · `.agentic-setup/score.json` · `.agentic-setup/score-history.jsonl` 
+- **Workflows**: `.github/workflows/ci.yml` · `.github/workflows/agentic-sync.yml` · `.github/workflows/agentic-score.yml` · `.github/workflows/codeql.yml` · `.github/workflows/publish-package.yml` · `.github/workflows/version-bump.yml` 
 - **MCP Integration**: Call `codegraph` to query files.
 
 ## Environment Prerequisites & Setup Requirements
