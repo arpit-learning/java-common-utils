@@ -41,7 +41,7 @@ jobs:
       run: ./gradlew test jacocoTestReport
 
     - name: Upload Test Results
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       if: always()
       with:
         name: test-results
@@ -50,7 +50,7 @@ jobs:
           **/build/test-results/test/*.xml
 
     - name: Upload JaCoCo Coverage Report
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       if: always()
       with:
         name: jacoco-report
