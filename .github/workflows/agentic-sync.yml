@@ -1,0 +1,44 @@
+name: agentic-setup Sync
+
+on:
+  schedule:
+    - cron: '0 3 * * 1-5'
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  packages: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@arpit-learning'
+
+      - uses: arpit-learning/agentic-setup@v1
+        with:
+          mode: sync
+          auto-refresh: true
+          comment: true
+          github-token: ${{ secrets.GH_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AGENTIC_SETUP_SKIP_UPDATE_CHECK: '1'
+          AGENTIC_SETUP_TELEMETRY_DISABLED: '1'
+
+      - name: agentic-setup check
+        run: npx @arpit-learning/agentic-setup@latest check --json
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+          AGENTIC_SETUP_SKIP_UPDATE_CHECK: '1'
+          AGENTIC_SETUP_TELEMETRY_DISABLED: '1'
