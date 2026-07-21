@@ -155,7 +155,7 @@ dependencies {
     runtimeOnly ('tools.jackson.core:jackson-databind')
     implementation ('com.jayway.jsonpath:json-path')
     implementation ('com.github.f4b6a3:uuid-creator:6.1.1')
-    implementation ('dev.arpit.learning:java-logger:0.0.5')
+    implementation ('dev.arpit.learning:java-logger:0.0.6')
     implementation ('com.fasterxml.jackson.dataformat:jackson-dataformat-csv')
     implementation ('com.fasterxml.jackson.core:jackson-core')
     implementation ('com.fasterxml.jackson.core:jackson-databind')

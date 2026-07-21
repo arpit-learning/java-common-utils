@@ -183,7 +183,7 @@
       "maxPoints": 7,
       "earnedPoints": 7,
       "passed": true,
-      "detail": "Config is up to date with latest commits"
+      "detail": "1 commit since last config update"
     },
     {
       "id": "claude_md_freshness",
@@ -192,7 +192,7 @@
       "maxPoints": 4,
       "earnedPoints": 4,
       "passed": true,
-      "detail": "Config updated in the latest commit"
+      "detail": "1 commit since last config update"
     },
     {
       "id": "no_secrets",
@@ -302,5 +302,5 @@
     "github-copilot",
     "antigravity"
   ],
-  "timestamp": "2026-07-21T14:47:58.274Z"
+  "timestamp": "2026-07-21T15:28:17.648Z"
 }
